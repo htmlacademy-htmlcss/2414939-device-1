@@ -18,8 +18,7 @@
           <button class="search-btn visually-hidden">Найти</button>
         </form>
         <div class="user-profile-functions">
-          <a class="profile" href="#">Коля Петухов
-          </a>
+          <a class="profile" href="#">Коля Петухов</a>
           <a class="logout" href="#">Выйти</a>
         </div>
         <div class="user-shop-functions">
@@ -27,19 +26,17 @@
           <a class="cart" href="#">Корзина</a>
         </div>
       </div>
-      <form>
-        <label for="catalog-item-select"></label>
-        <select name="catalog-item" id="catalog-item-select">
-          <option value="">Каталог товаров</option>
-          <option value="virtual-reality">Виртуальная реальность</option>
-          <option value="selfy-sticks">Моноподы для селфи</option>
-          <option value="action-camera">Экшн-камеры</option>
-          <option value="fitnes-bracelet">Фитнес-браслеты</option>
-          <option value="smart-watch">Умные часы</option>
-          <option value="quadcopters">Квадрокоптеры</option>
-        </select>
-        <!--не до конца уверен, что так правильно (выпадающий каталог). смущает остутствие отдального заголовка-ссылки "Каталог товаров". И как привязать заголовок-ссылку к выпадаюшему списку - не соображу. Может потом стилями...-->
-      </form>
+      <nav class="catalog-nav">
+        <button onclick="myFunction()" class="dropbtn">Каталог товаров</button>
+      </nav>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Виртуальная реальность</a>
+        <a href="#">Моноподы для селфи</a>
+        <a href="#">Экшн-камеры</a>
+        <a href="#">Фитнес-браслеты</a>
+        <a href="#">Умные часы</a>
+        <a href="#">Квадрокоптеры</a>
+      </div>
       <nav class="shop-info-nav">
         <h4 class="visually-hidden">информация и контакты</h4>
         <ul class="shop-info">
@@ -119,16 +116,14 @@
       <section class="catalog-category">
         <div class="catalog-top">
           <h2 class="catalog-section-title">Сортировка:</h2>
-          <div class="catalog-sort-name">
-            <form>
-              <label for="sort-name-select"></label>
-              <select name="sort-name" id="sort-name-select">
-                <option value="popular">Популярные</option>
-                <option value="cheaper">Дешевле</option>
-                <option value="expensive">Дороже</option>
-              </select>
-            </form>
-          </div>
+          <form>
+            <label for="sort-name-select"></label>
+            <select name="sort-name" id="sort-name-select">
+              <option value="popular">Популярные</option>
+              <option value="cheaper">Дешевле</option>
+              <option value="expensive">Дороже</option>
+            </select>
+          </form>
           <div class="catalog-sort-arrows">
             <button class="sort-arrow sort-arrow-up">
               <span class="visually-hidden">Вверх</span>
@@ -149,8 +144,8 @@
                     <h3>Любительская <br>
                       селфи-палка
                     </h3>
+                    500 руб.
                   </div>
-                  <div class="item-price">500 руб.</div>
                 </a>
               </article>
             </li>
@@ -162,8 +157,8 @@
                     <h3>Профессиональная <br>
                       селфи-палка
                     </h3>
+                    1500 руб.
                   </div>
-                  <div class="item-price">1500 руб.</div>
                 </a>
               </article>
             </li>
@@ -173,8 +168,8 @@
                   <img src="images/product-3.png" width="360" height="380" alt="">
                   <div class="item-name">
                     <h3>Непотопляемая селфи-палка</h3>
+                    2500 руб.
                   </div>
-                  <div class="item-price">2500 руб.</div>
                 </a>
               </article>
             </li>
@@ -184,8 +179,8 @@
                   <img src="images/product-4.png" width="360" height="380" alt="">
                   <div class="item-name">
                     <h3>Селфи-палка «Следуй за мной»</h3>
+                    1500 руб.
                   </div>
-                  <div class="item-price">1500 руб.</div>
                 </a>
               </article>
             </li>
