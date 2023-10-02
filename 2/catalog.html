@@ -25,16 +25,20 @@
           <a class="cart" href="#">Корзина</a>
         </div>
       </div>
-      <nav class="catalog-nav">
-        <button onclick="myFunction()" class="dropbtn">Каталог товаров</button>
-      </nav>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#">Виртуальная реальность</a>
-        <a href="#">Моноподы для селфи</a>
-        <a href="#">Экшн-камеры</a>
-        <a href="#">Фитнес-браслеты</a>
-        <a href="#">Умные часы</a>
-        <a href="#">Квадрокоптеры</a>
+      <div class="catalog">
+        <button class="dropbtn">Каталог товаров</button>
+        <nav class="catalog-nav">
+          <div class="dropdown-content">
+            <ul class="catalog-category-list">
+              <li class="catalog-category-name"><a href="#">Виртуальная реальность</a></li>
+              <li class="catalog-category-name"><a href="#">Моноподы для селфи</a></li>
+              <li class="catalog-category-name"><a href="#">Экшн-камеры</a></li>
+              <li class="catalog-category-name"><a href="#">Фитнес-браслеты</a></li>
+              <li class="catalog-category-name"><a href="#">Умные часы</a></li>
+              <li class="catalog-category-name"><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
       <nav class="shop-info-nav">
         <h4 class="visually-hidden">информация и контакты</h4>
@@ -143,7 +147,7 @@
                     <h3>Любительская <br>
                       селфи-палка
                     </h3>
-                    500 руб.
+                    <span class="item-price">500 руб.</span>
                   </div>
                 </a>
               </article>
@@ -156,7 +160,7 @@
                     <h3>Профессиональная <br>
                       селфи-палка
                     </h3>
-                    1500 руб.
+                    <span class="item-price">1500 руб.</span>
                   </div>
                 </a>
               </article>
@@ -167,7 +171,7 @@
                   <img src="images/product-3.png" width="360" height="380" alt="">
                   <div class="item-name">
                     <h3>Непотопляемая селфи-палка</h3>
-                    2500 руб.
+                    <span class="item-price">2500 руб.</span>
                   </div>
                 </a>
               </article>
@@ -178,7 +182,7 @@
                   <img src="images/product-4.png" width="360" height="380" alt="">
                   <div class="item-name">
                     <h3>Селфи-палка «Следуй за мной»</h3>
-                    1500 руб.
+                    <span class="item-price">1500 руб.</span>
                   </div>
                 </a>
               </article>
