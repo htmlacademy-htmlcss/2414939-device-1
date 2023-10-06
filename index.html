@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Device</title>
   </head>
+
   <body>
     <header class="page header">
       <div class="container">
@@ -19,6 +21,8 @@
         </form>
         <div class="user-profile-functions">
           <a class="login" href="#">Войти</a>
+        </div>
+        <div class="user-product-function">
           <a class="compare" href="#">Сравнить</a>
           <a class="cart" href="#">Корзина</a>
         </div>
@@ -55,14 +59,6 @@
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Интернет-магазин "Device"</h1>
-      <input class="visually-hidden" type="radio" id="tp-btn-1" name="top-products" checked>
-      <input class="visually-hidden" type="radio" id="tp-btn-2" name="top-products">
-      <input class="visually-hidden" type="radio" id="tp-btn-3" name="top-products">
-      <div class="top-products-slider">
-        <label for="tp-btn-1">1</label>
-        <label for="tp-btn-2">2</label>
-        <label for="tp-btn-3">3</label>
-      </div>
       <article class="top-product top-product-1">
         <div class="top-product-image">
           <img class="top-image-1" src="images/qwadro.png" width="560" height="560" alt="Квадрокоптер.">
@@ -73,18 +69,19 @@
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
             камеру.</p>
           <button class="button" type="submit">Подробнее</button>
-          <table>
-            <tr>
-              <td>800 м</td>
-              <td>50 м</td>
-            </tr>
-            <tr>
-              <th>Дальность полета</th>
-              <th>Радиус поражения</th>
-            </tr>
-          </table>
+          <dl>
+            <dt>Дальность полета</dt>
+            <dd>800 м</dd>
+            <dt>Радиус поражения</dt>
+            <dd>50 м</dd>
+          </dl>
         </div>
       </article>
+      <ul class="top-products-slider">
+        <li><button class="button-top-products" type="submit"></button></li>
+        <li><button class="button-top-products" type="submit"></button></li>
+        <li><button class="button-top-products" type="submit"></button></li>
+      </ul>
       <section class="catalog-category">
         <h2 class="visually-hidden">Категории каталога</h2>
         <ul class="catalog-category-list">
@@ -184,38 +181,46 @@
           </div>
         </div>
       </section>
-      <article class="delivery info">
+      <section class="delivery info">
         <h3 class="visually-hidden">Информация о доставке под заказ</h3>
         <a href="#">Доставим редкий товар под заказ<img src="#" alt="Информация о доставке."></a>
-      </article>
-      <section class="about-us">
-        <h2 class="info-title">О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-        </p>
-        <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-        <ul class="trans-com">
-          <li><b>Меловые линии</b></li>
-          <li><b>СДИК</b></li>
-          <li><b>ТоксБерри</b></li>
-        </ul>
-        <button class="button" type="submit">Подробнее о нас</button>
       </section>
-      <section class="contacts">
-        <h2 class="contacts-title">Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис.
-          Заодно сможете проверить работоспособность покупки.</p>
-        <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
-        <address class="contacts-address">
-          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <a class="contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
-        </address>
-        <h3 class="contacts-subtitle">Время работы</h3>
-        <ul class="contacts-schedule">
-          <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
-          <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
-        </ul>
-        <button class="button" type="submit">Напишите нам</button>
-      </section>
+      <div class="shop-about-contacts">
+        <section class="about-us">
+          <h2 class="info-title">О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+          </p>
+          <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+          <ul class="trans-com">
+            <li><b>Меловые линии</b></li>
+            <li><b>СДИК</b></li>
+            <li><b>ТоксБерри</b></li>
+          </ul>
+          <button class="button" type="submit">Подробнее о нас</button>
+        </section>
+        <section class="contacts">
+          <h2 class="contacts-title">Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис.
+            Заодно сможете проверить работоспособность покупки.</p>
+          <div class="contacts-adress-schedule">
+            <section class="shop-adress">
+              <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
+              <address class="contacts-address">
+                <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <a class="contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
+              </address>
+            </section>
+            <section class="shop-schedule">
+              <h3 class="contacts-subtitle">Время работы</h3>
+              <ul class="contacts-schedule">
+                <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+                <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+              </ul>
+            </section>
+          </div>
+          <button class="button" type="submit">Напишите нам</button>
+        </section>
+      </div>
       <section class="suscription">
         <h2 class="suscription-title">Подпишитесь на рассылку</h2>
         <p>Еженедельный дайджест с обзорами новинок,
@@ -289,4 +294,5 @@
       </div>
     </footer>
   </body>
+
 </html>
