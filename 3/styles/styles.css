@@ -26,6 +26,10 @@ html {
   height: 100%;
 }
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -52,7 +56,6 @@ body {
 .search-form {
   width: 517px;
   height: 40px;
-
 }
 
 .search-btn {
@@ -100,6 +103,11 @@ a {
   text-align: left;
 }
 
+.button {
+  border: none;
+  background-color: transparent;
+}
+
 .shop-info-nav {
   display: flex;
   width: 471px;
@@ -114,6 +122,11 @@ a {
   text-transform: uppercase;
 }
 
+.shop-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -121,7 +134,6 @@ a {
 .main-index {
   color: #000000;
   background-color: #ffffff;
-
 }
 
 .page-container {
@@ -155,7 +167,6 @@ li {
 
 }
 
-
 .dropdown-content {
   background-color: #ffe17f;
 }
@@ -188,7 +199,10 @@ li {
 
 .top-product-description {
   width: 560px;
+}
 
+.top-products-slider {
+  text-align: center;
 }
 
 dd {
@@ -198,6 +212,13 @@ dd {
 
 dt {
   font-size: 16px;
+}
+
+.trans-com {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
 }
 
 
@@ -215,7 +236,6 @@ h2 {
   font-weight: 800;
   line-height: 50px;
   text-align: left;
-
 }
 
 h3 {
@@ -242,9 +262,16 @@ h3 {
   background-repeat: no-repeat;
 }
 
+.newsletter {
+
+  width: 1440px;
+  height: 421px;
+  background-color: #F0F0F0;
+}
+
 .subscription {
   display: flex;
-  background-color: #f0f0f0;
+  align-items: center;
 }
 
 .subscription-title {
@@ -254,12 +281,48 @@ h3 {
 .subscription p {
   width: 560px;
   height: 90px;
+  margin: 0 auto;
 
 }
 
 .subscription-form {
-  width: 810px;
+  display: flex;
+  align-items: end;
+  max-width: 1158px;
+  height: 55px;
+  border-color: transparent;
 }
+.subscription-form p {
+  margin-right: auto;
+}
+
+.field {
+  width: 557px;
+  height: 55px;
+  margin: 0%;
+  padding: 0%;
+  border-color: #C4C4C4;
+  border-width: 3px;
+  font-size: 18px;
+  font-weight: 400;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  background-color: #F0F0F0;
+}
+
+.subscription-button {
+  width: 234px;
+  height: 55px;
+  border-color: #C4C4C4;
+  border-style: solid;
+  border-width: 3px;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0%;
+}
+
 
 .contacts-address {
   font-style: normal;
