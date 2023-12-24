@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Device</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <header class="page-header">
       <div class="header-top">
@@ -32,16 +30,14 @@
         <div class="catalog">
           <button class="dropbtn">Каталог товаров</button>
           <nav class="catalog-nav">
-            <div class="dropdown-content">
-              <ul class="catalog-category-list">
-                <li class="catalog-category-name"><a href="#">Виртуальная реальность</a></li>
-                <li class="catalog-category-name"><a href="#">Моноподы для селфи</a></li>
-                <li class="catalog-category-name"><a href="#">Экшн-камеры</a></li>
-                <li class="catalog-category-name"><a href="#">Фитнес-браслеты</a></li>
-                <li class="catalog-category-name"><a href="#">Умные часы</a></li>
-                <li class="catalog-category-name"><a href="#">Квадрокоптеры</a></li>
-              </ul>
-            </div>
+            <ul class="category-list">
+              <li class="catalog-category-name"><a href="#">Виртуальная реальность</a></li>
+              <li class="catalog-category-name"><a href="catalog.html">Моноподы для селфи</a></li>
+              <li class="catalog-category-name"><a href="#">Экшн-камеры</a></li>
+              <li class="catalog-category-name"><a href="#">Фитнес-браслеты</a></li>
+              <li class="catalog-category-name"><a href="#">Умные часы</a></li>
+              <li class="catalog-category-name"><a href="#">Квадрокоптеры</a></li>
+            </ul>
           </nav>
         </div>
         <nav class="shop-info-nav">
@@ -75,18 +71,16 @@
             <div class="top-product-button">
               <button class="button">Подробнее</button>
             </div>
-            <table class="top-product-specification">
-              <tbody>
-                <tr class="specification-top">
-                  <td class="specification-cell">800 м</td>
-                  <td class="specification-cell">50 м</td>
-                </tr>
-                <tr class="specification-bottom">
-                  <td class="specification-cell">Дальность полета</td>
-                  <td class="specification-cell">Радиус поражения</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="top-product-conteiner">
+              <dl class="top-product-specification">
+                <dd class="specification-top">800 м</dd>
+                <dt class="specification-bottom">Дальность полета</dt>
+              </dl>
+              <dl class="top-product-specification">
+                <dd class="specification-top">50 м</dd>
+                <dt class="specification-bottom">Радиус поражения</dt>
+              </dl>
+            </div>
           </div>
         </article>
         <ul class="top-products-slider">
@@ -100,7 +94,7 @@
             <li>
               <a class="catalog-category-name" href="catalog.html">
                 <div class="category-name-image">
-                  <img src="images/vr-category.svg" width="160" height="160" alt="">
+                  <img src="images/vr-category.svg" width="160" height="160" alt="Виртуальная реальность">
                 </div>
                 <h3>Виртуальная <br>реальность</h3>
               </a>
@@ -166,9 +160,7 @@
                 <div class="servis-description">
                   <h3 class="title servis-title">Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! Ведь <br>
-                    мы
-                    неплохо
-                    заработаем, поднимая его на ваш этаж.</p>
+                    мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </div>
                 <div class="service-image">
                   <img src="images/delivery_ico.png" width="136" height="164" alt="доставка товара.">
@@ -249,19 +241,21 @@
         </div>
         <div class="newsletter">
           <div class="subscription">
-            <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+            <h2 class="subscription-title">Подпишитесь <br> на рассылку</h2>
             <p>Еженедельный дайджест с обзорами новинок, <br>
               длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           </div>
-          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="subscription-email"><span class="visually-hidden">email</span></label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email"
-              required>
-            <button class="subscription-button">
-              <span>Подписаться</span>
-            </button>
+          <div class="subscription-conteiner">
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="subscription-email"><span class="visually-hidden">email</span></label>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email"
+                id="subscription-email" required>
+              <button class="subscription-button">
+                <span>Подписаться</span>
+              </button>
+            </form>
             <p>Это бесплатно</p>
-          </form>
+          </div>
         </div>
       </div>
     </main>
@@ -326,8 +320,6 @@
         </div>
       </div>
     </footer>
-
-
   </body>
 
 </html>
