@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Device</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <header class="page-header">
       <div class="header-top">
@@ -60,34 +62,40 @@
       <div class="page-container">
         <h1 class="visually-hidden">Интернет-магазин "Device"</h1>
         <article class="top-product top-product-1">
-          <div class="top-product-image">
-            <img class="top-image-1" src="images/qwadro.png" width="560" height="560" alt="Квадрокоптер.">
-          </div>
-          <div class="top-product-description">
-            <span class="top-products-number">01</span>
-            <h3 class="title top-product-title">Порхает как бабочка, жалит как пчела!</h3>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
-              камеру.</p>
-            <div class="top-product-button">
-              <button class="button">Подробнее</button>
+          <span class="top-products-number">01</span>
+          <div class="top-product-conteiner">
+            <div class="top-product-image">
+              <img class="top-image-1" src="images/qwadro.png" width="560" height="560" alt="Квадрокоптер.">
             </div>
-            <div class="top-product-conteiner">
-              <dl class="top-product-specification">
-                <dd class="specification-top">800 м</dd>
-                <dt class="specification-bottom">Дальность полета</dt>
-              </dl>
-              <dl class="top-product-specification">
-                <dd class="specification-top">50 м</dd>
-                <dt class="specification-bottom">Радиус поражения</dt>
-              </dl>
+            <div class="top-product-description">
+              <h3 class="title top-product-title">Порхает как бабочка,<br> жалит как пчела!</h3>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под
+                стандартную
+                камеру.</p>
+              <div class="top-product-button">
+                <button class="button">Подробнее</button>
+              </div>
+              <div class="top-product-conteiner">
+                <dl class="top-product-specification">
+                  <div class="specification-wrapper">
+                    <dd> 800 м</dd>
+                    <dt>Дальность полета</dt>
+                  </div>
+                  <div class="specification-wrapper">
+                    <dd> 50 м</dd>
+                    <dt>Радиус поражения</dt>
+                  </div>
+                </dl>
+              </div>
             </div>
           </div>
+          <ul class="top-products-slider">
+            <li><button class="button-top-products"></button></li>
+            <li><button class="button-top-products"></button></li>
+            <li><button class="button-top-products"></button></li>
+          </ul>
         </article>
-        <ul class="top-products-slider">
-          <li><button class="button-top-products"></button></li>
-          <li><button class="button-top-products"></button></li>
-          <li><button class="button-top-products"></button></li>
-        </ul>
+
         <section class="catalog-category">
           <h2 class="visually-hidden">Категории каталога</h2>
           <ul class="catalog-category-list">
@@ -196,7 +204,7 @@
         </section>
         <section class="delivery-info">
           <h3 class="visually-hidden">Информация о доставке под заказ</h3>
-          <img src="images/Rectangle.png" width="125" height="100" alt="">
+          <img src="" width="125" height="100" alt="">
           <a class="delivery-info-text" href="#">Доставим редкий товар под заказ</a>
           <img src="images/delivery_logo.png" width="125" height="100" alt="">
         </section>
@@ -242,8 +250,8 @@
         <div class="newsletter">
           <div class="subscription">
             <h2 class="subscription-title">Подпишитесь <br> на рассылку</h2>
-            <p>Еженедельный дайджест с обзорами новинок, <br>
-              длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <p>Еженедельный дайджест с обзорами новинок,<br>
+              длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
           </div>
           <div class="subscription-conteiner">
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -261,7 +269,9 @@
     </main>
     <footer class="main-footer">
       <div class="footer-top">
-        <img src="images/footer-logo.png" width="145" height="36" alt="Логотип магазина Device.">
+        <a class="footer-logo" href="index.html">
+          <img src="images/footer-logo.png" width="145" height="36" alt="Логотип магазина Device.">
+        </a>
       </div>
       <div class="footer-middle">
         <section class="footer-contacts-address">
