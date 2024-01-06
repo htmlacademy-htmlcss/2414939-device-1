@@ -138,7 +138,6 @@ a {
   margin: auto;
 }
 
-
 .catalog {
   display: flex;
   flex-wrap: wrap;
@@ -188,7 +187,6 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   background-color: transparent;
-
 }
 
 .shop-info {
@@ -209,8 +207,6 @@ a {
   text-decoration: none;
   text-transform: uppercase;
 }
-
-
 
 .shop-info-list {
   display: flex;
@@ -481,7 +477,6 @@ p {
   background-color: transparent;
 }
 
-
 .servis-title {
   margin-bottom: 34px;
   margin-right: 210px;
@@ -740,7 +735,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 32px;
-
 }
 
 .item-name {
@@ -753,7 +747,6 @@ p {
 .item-price {
   justify-self: start;
 }
-
 
 .pagination-show-more {
   margin-bottom: 44px;
@@ -882,7 +875,6 @@ p {
 .footer-contacts-phone {
   grid-column: 3/4;
   grid-row: 2/3;
-
 }
 
 .footer-social {
@@ -925,7 +917,6 @@ p {
   text-align: left;
   grid-column: 1/2;
   grid-row: 3/4;
-
 }
 
 .footer-social-list {
