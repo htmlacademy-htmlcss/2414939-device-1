@@ -913,8 +913,8 @@ select {
 
 .footer-container {
   display: grid;
-  gap: 30px 120px;
-  grid-template-columns: 250px 500px 200px;
+  gap: 30px 85px;
+  grid-template-columns: 250px 500px 240px;
   background-color: #444444;
   color: #ffffff;
   justify-content: center;
