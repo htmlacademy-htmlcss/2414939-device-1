@@ -55,14 +55,17 @@ body {
 }
 
 .header-background {
-
   background-color: #FFE17F;
 }
 
 .inner {
   max-width: 1440px;
   margin: 0 auto;
+}
 
+.content {
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
 .header-top {
@@ -88,7 +91,6 @@ body {
   border: 2px;
   min-height: 40px;
   width: 50%;
-
 }
 
 .search-input {
@@ -169,7 +171,11 @@ a {
 
 .catalog-category {
   box-sizing: border-box;
+  margin-bottom: 70px;
+}
 
+.category-items {
+  box-sizing: border-box;
 }
 
 .catalog-nav {
@@ -198,7 +204,6 @@ a {
   font-weight: 800;
   line-height: 22px;
   letter-spacing: 0.2em;
-
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
@@ -233,7 +238,10 @@ a {
 .main-container {
   color: #000000;
   box-sizing: border-box;
+}
 
+.main-index {
+  box-sizing: border-box;
 }
 
 .main-background {
@@ -242,22 +250,16 @@ a {
   flex-direction: column;
 }
 
-
-
 .catalog-container {
   background-color: #FFFFFF;
   margin-bottom: 44px;
   box-sizing: border-box;
-
 }
 
 .catalog-carts {
-  padding: 70px 40px 0;
+  padding: 70px 40px 78px;
   box-sizing: border-box;
   background-color: #FFFFFF;
-  padding-bottom: 78px;
-
-
 }
 
 .title {
@@ -304,7 +306,6 @@ li {
 }
 
 .category-name-image {
-
   background-color: #ffe17f;
   background-repeat: no-repeat;
   background-size: 160px, 160px;
@@ -419,7 +420,6 @@ button {
   flex-direction: column;
   gap: 30px;
   align-items: start;
-
 }
 
 .contacts-container {
@@ -427,7 +427,6 @@ button {
   flex-direction: column;
   gap: 30px;
   align-items: start;
-
 }
 
 h1 {
@@ -466,17 +465,11 @@ p {
 
 .catalog-page {
   box-sizing: border-box;
-  margin: auto;
   padding-top: 25px;
-
-}
-
-.catalog-page .inner {
   display: flex;
   gap: 60px;
   flex-wrap: nowrap;
   flex-direction: row;
-  max-width: 1160px;
 }
 
 .filters {
@@ -486,7 +479,6 @@ p {
   align-items: start;
   box-sizing: border-box;
   width: 320px;
-
 }
 
 .service-menu {
@@ -530,9 +522,7 @@ p {
 
 .index-column {
   display: flex;
-  margin: 0 auto;
   justify-content: space-between;
-  max-width: 1160px;
 }
 
 .servis-title {
@@ -547,12 +537,11 @@ p {
 
 .service-item {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 73px 0;
+  align-content: center;
   gap: 106px;
-
 }
 
 .service-image {
@@ -563,21 +552,15 @@ p {
 .shop-about-contacts {
   display: flex;
   justify-content: space-between;
-  max-width: 1160px;
-  margin: 0 auto;
   margin-bottom: 70px;
   box-sizing: border-box;
+  gap: 108px;
 }
-
-
 
 .delivery-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  max-width: 1160px;
-  margin: auto;
   margin-bottom: 70px;
   font-size: 20px;
   box-sizing: border-box;
@@ -585,20 +568,10 @@ p {
   background-repeat: no-repeat;
 }
 
-
-
 .delivery-info-text {
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
-}
-
-.about-us {
-  max-width: 520px;
-}
-
-.contacts {
-  max-width: 532px;
 }
 
 .contacts-subtitle {
@@ -613,9 +586,7 @@ p {
 }
 
 .newsletter {
-
-  padding-top: 64px;
-  padding-bottom: 56px;
+  padding: 64px 0 56px;
   box-sizing: border-box;
 }
 
@@ -623,14 +594,11 @@ p {
   background-color: #F0F0F0;
 }
 
-
-
 .subscription {
   display: flex;
   justify-content: space-between;
   align-items: start;
   margin: 0 auto 144px;
-  max-width: 1160px;
 }
 
 .subscription-title {
@@ -639,7 +607,8 @@ p {
 
 .subscription-form {
   border-color: transparent;
-  max-width: 810px;
+  min-width: 810px;
+  display: flex;
 }
 
 .subscription-form p {
@@ -653,7 +622,6 @@ p {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  max-width: 1160px;
 }
 
 .field {
@@ -665,7 +633,8 @@ p {
   border-right-style: none;
   border-left-style: none;
   background-color: #F0F0F0;
-  padding: 11px 310px 18px 16px;
+  padding: 18px 20px;
+  flex-grow: 1;
 }
 
 .subscription-button {
@@ -703,13 +672,11 @@ p {
   margin: 0;
   font-size: 50px;
   line-height: 50px;
-
   margin-bottom: 16px;
 }
 
 .page-title-background {
   background-color: #FFFFFF;
-
 }
 
 .breadcrumbs-list {
@@ -719,7 +686,6 @@ p {
   list-style-type: none;
   column-gap: 36px;
   background-color: #FFFFFF;
-
 }
 
 .catalog-filter-title {
@@ -768,7 +734,6 @@ select {
   border-top-color: #000000;
   border-top-width: 2px;
   border-top-style: solid;
-
 }
 
 .filter-name {
@@ -799,22 +764,20 @@ select {
 
 .catalog-top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: start;
   align-items: start;
   background-color: #F0F0F0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   box-sizing: border-box;
-
 }
 
 .catalog-sort-arrows {
   display: flex;
-
 }
 
 .sort-arrow {
-
   min-width: 30px;
   min-height: 30px;
 }
@@ -859,7 +822,6 @@ select {
   align-items: center;
   list-style-type: none;
   background-color: #EBEBEB;
-
 }
 
 .button-show-more {
@@ -918,13 +880,11 @@ select {
   background-color: #444444;
   color: #ffffff;
   justify-content: center;
-  max-width: 1440px;
   padding: 60px 16px;
 }
 
 .footer-background {
   background-color: #444444;
-
 }
 
 .footer-contacts-address {
