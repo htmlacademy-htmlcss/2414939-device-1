@@ -8,32 +8,58 @@
   </head>
 
   <body>
-    <div class="header-background">
-      <header class="page-header">
+    <header class="page-header">
+      <div class="header-wrapper">
         <div class="header-top">
           <a class="logo header-logo" href="index.html">
             <img src="images/main-logo.png" width="145" height="36" alt="Логотип магазина Device.">
           </a>
         </div>
         <div class="header-container">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="search-input" type="search" id="header-search" placeholder="Поиск по сайту" name="search">
-            <label for="header-search"><span class="visually-hidden">Текст поиска</span></label>
-            <button class="search-btn">Найти</button>
-          </form>
-          <div class="user-functions-container">
-            <div class="user-profile-functions">
-              <a class="login" href="#">Войти</a>
-            </div>
-            <div class="user-product-function">
-              <a class="compare" href="#">Сравнить</a>
-              <a class="cart" href="#">Корзина</a>
-            </div>
+          <div class="input">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="search-field">
+                <input class="search-input" type="search" id="header-search" placeholder="Поиск по сайту" name="search">
+                <svg class="search-icon" claria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="none" viewBox="0 0 16 16">
+                  <g clip-path="url(#a)">
+                    <path fill="#000"
+                      d="m15.7 14.3-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h16v16H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <label for="header-search"><span class="visually-hidden">Текст поиска</span></label>
+              <button class="search-btn"><span>Найти</span></button>
+            </form>
           </div>
+          <a class="login" href="#"><svg class="user-functions-icon" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg" width="15" height="12" fill="none" viewBox="0 0 15 12">
+              <path fill="#000"
+                d="M1 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0S4 1.6 4 3.5c0 1.3.7 2.4 1.7 3C3.1 7.2 1.2 9.4 1 12Z" />
+            </svg>Войти</a>
+
+          <a class="compare" href="#"><svg class="user-functions-icon" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg" width="10" height="12" fill="none" viewBox="0 0 10 12">
+              <path fill="#000" d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" />
+            </svg>Сравнить</a>
+          <a class="cart" href="#"><svg class="user-functions-icon" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14">
+              <path fill="#000"
+                d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" />
+            </svg>Корзина</a>
         </div>
         <div class="shop-info">
           <div class="catalog">
-            <button class="dropbtn">Каталог товаров</button>
+            <button class="dropbtn">Каталог товаров
+              <div class="catalog-btn">
+                <div class="catalog-btn-inner"></div>
+              </div>
+            </button>
             <nav class="catalog-nav">
               <ul class="category-list">
                 <li class="catalog-category-name"><a href="#">Виртуальная реальность</a></li>
@@ -60,45 +86,72 @@
             </ul>
           </nav>
         </div>
-      </header>
-    </div>
+      </div>
+      <div class="header-background"> </div>
+    </header>
     <main class="main-index">
       <div class="page-container">
         <h1 class="visually-hidden">Интернет-магазин "Device"</h1>
-        <article class="top-product content top-product-1">
-          <span class="top-products-number">01</span>
-          <div class="top-product-conteiner">
-            <div class="top-product-image">
-              <img class="top-image-1" src="images/qwadro.png" width="560" height="560" alt="Квадрокоптер.">
-            </div>
-            <div class="top-product-description">
-              <h3 class="title top-product-title">Порхает как бабочка, жалит как пчела!</h3>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под
-                стандартную
-                камеру.</p>
-              <div class="top-product-button">
-                <button class="button">Подробнее</button>
+
+        <section class="gallery">
+          <h2 class="gallery-title visually-hidden">Фотогалерея</h2>
+          <!-- <div class="top-prod-number">
+            <span class="slider-number">01</span>
+          </div> -->
+          <div class="top-prod-slider">
+            <div class="top-product-wrapper">
+              <div class="top-prod-image">
+                <img class="slider-image" src="images\slider-1.png" width="560px" height="548px" alt="Квадрокоптер.">
+                <div class="slider-controls">
+                  <button class="slider-button slider-prev" type="button">
+                    <span class="visually-hidden">Предыдущее фото</span>
+                  </button>
+                  <button class="slider-button slider-next" type="button">
+                    <span class="visually-hidden">Следующее фото</span>
+                  </button>
+                </div>
               </div>
-              <div class="top-product-conteiner">
-                <dl class="top-product-specification">
-                  <div class="specification-wrapper">
-                    <dd> 800 м</dd>
-                    <dt>Дальность полета</dt>
-                  </div>
-                  <div class="specification-wrapper">
-                    <dd> 50 м</dd>
-                    <dt>Радиус поражения</dt>
-                  </div>
-                </dl>
+              <div class="top-product-description">
+                <h3 class="title top-product-title">Порхает как бабочка, жалит как пчела!</h3>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под
+                  стандартную
+                  камеру.</p>
+                <div class="top-product-button">
+                  <button class="button">Подробнее</button>
+                </div>
+                <div class="top-product-conteiner">
+                  <dl class="top-product-specification">
+                    <div class="specification-wrapper">
+                      <dd> 800 м</dd>
+                      <dt>Дальность полета</dt>
+                    </div>
+                    <div class="specification-wrapper">
+                      <dd> 50 м</dd>
+                      <dt>Радиус поражения</dt>
+                    </div>
+                  </dl>
+                </div>
               </div>
             </div>
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item ">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">1 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">2 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button>
+              </li>
+            </ol>
           </div>
-          <ul class="top-products-slider">
-            <li><button class="button-top-products"></button></li>
-            <li><button class="button-top-products"></button></li>
-            <li><button class="button-top-products"></button></li>
-          </ul>
-        </article>
+        </section>
         <section class="catalog-category content">
           <h2 class="visually-hidden">Категории каталога</h2>
           <ul class="catalog-category-list">
@@ -107,7 +160,7 @@
                 <div class="category-name-image">
                   <img src="images/vr-category.svg" width="160" height="160" alt="Виртуальная реальность">
                 </div>
-                <h3>Виртуальная <br>реальность</h3>
+                <h3><span class="category-name">Виртуальная <br>реальность</span></h3>
               </a>
             </li>
             <li>
@@ -115,7 +168,7 @@
                 <div class="category-name-image">
                   <img src="images/selfy-sticks-cat.svg" width="160" height="160" alt="">
                 </div>
-                <h3>Моноподы <br>для селфи</h3>
+                <h3><span class="category-name">Моноподы <br>для селфи</span></h3>
               </a>
             </li>
             <li>
@@ -123,7 +176,7 @@
                 <div class="category-name-image">
                   <img src="images/action-cam-cat.svg" width="160" height="160" alt="">
                 </div>
-                <h3>Экшн-камеры</h3>
+                <h3><span class="category-name">Экшн-камеры</span></h3>
               </a>
             </li>
             <li>
@@ -131,7 +184,7 @@
                 <div class="category-name-image">
                   <img src="images/fitnes-bracelet-cat.svg" width="160" height="160" alt="">
                 </div>
-                <h3>Фитнес-браслеты</h3>
+                <h3><span class="category-name">Фитнес-браслеты</span></h3>
               </a>
             </li>
             <li>
@@ -139,7 +192,7 @@
                 <div class="category-name-image">
                   <img src="images/smart-watch-cat.svg" width="160" height="160" alt="">
                 </div>
-                <h3>Умные часы</h3>
+                <h3><span class="category-name">Умные часы</span></h3>
               </a>
             </li>
             <li>
@@ -147,7 +200,7 @@
                 <div class="category-name-image">
                   <img src="images/qwadro-cat.svg" width="160" height="160" alt="">
                 </div>
-                <h3>Квадрокоптеры</h3>
+                <h3><span class="category-name">Квадрокоптеры</span></h3>
               </a>
             </li>
           </ul>
@@ -212,9 +265,13 @@
         </div>
         <section class="delivery-info content">
           <h3 class="visually-hidden">Информация о доставке под заказ</h3>
-          <img src="" width="125" height="100" alt="">
+          <img class="delivery-special"
+            src="C:\Users\ivan_\Documents\GitHub\2414939-device-1\images\delivery_service.png" width="47" height="31"
+            alt="">
           <a class="delivery-info-text" href="#">Доставим редкий товар под заказ</a>
-          <img src="images/delivery_logo.png" width="125" height="100" alt="">
+          <img class="delivery-special-info "
+            src="C:\Users\ivan_\Documents\GitHub\2414939-device-1\images\delivery_logo.png" width="125" height="100"
+            alt="">
         </section>
         <div class="shop-about-contacts content">
           <section class="about-us">
@@ -272,7 +329,13 @@
                   <span>Подписаться</span>
                 </button>
               </form>
-              <p>Это бесплатно</p>
+              <div class="its-free-container">
+                <svg class="chek-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"
+                  viewBox="0 0 16 17">
+                  <path fill="#08AF00" d="m15.498 1-9.6 9.3-4.4-4.3v4.7l4.5 4.3 9.5-9.3V1Z" />
+                </svg>
+                <p>Это бесплатно</p>
+              </div>
             </div>
           </div>
         </div>
@@ -294,13 +357,13 @@
             <h4 class="visually-hidden">информация и контакты</h4>
             <ul class="footer-shop-info">
               <li class="footer-shop-info-item">
-                <a href="#">Доставка</a>
+                <a class="footer-shop-info-link" href="#">Доставка</a>
               </li>
               <li class="footer-shop-info-item">
-                <a href="#">Гарантия</a>
+                <a class="footer-shop-info-link" href="#">Гарантия</a>
               </li>
               <li class="footer-shop-info-item">
-                <a href="#">Контакты</a>
+                <a class="footer-shop-info-link" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -309,31 +372,43 @@
             <a class="footer-contacts-phone" href="tel:+78121212">Тел.: +7 (812) 812-12-12</a>
           </section>
           <div class="footer-decor">
-            <img src="#" width="80" height="7" alt="">
+            <img src="images/footer_decor.png" alt="декор">
           </div>
           <section class="footer-social">
             <h4 class="visually-hidden">мы в социальных сетях</h4>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a href="https://t.me/htmlacademy"><img src="images/telegram.svg" width="40" height="40"
-                    alt="мы в telegram">
+                <a class="footer-social-link footer-social-telegram" href="https://t.me/htmlacademy">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" fill="none" viewBox="0 0 14 12">
+                    <g clip-path="url(#a)">
+                      <path fill="#444"
+                        d="M12.443.074.623 4.632c-.807.324-.802.774-.148.974l3.035.947 7.021-4.43c.332-.202.635-.093.386.128L5.228 7.385l-.209 3.129c.307 0 .442-.141.614-.307l1.474-1.433 3.066 2.264c.565.312.971.152 1.112-.523l2.013-9.485c.206-.826-.316-1.2-.855-.956Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h14v12H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a href="https://www.youtube.com/user/htmlacademyru"><img src="images/youtube.svg" width="40"
-                    height="40" alt="мы в youtube">
+                <a class="footer-social-link footer-social-youtube"
+                  href="https://www.youtube.com/user/htmlacademyru"><img src="images/youtube_icon.svg" width="16"
+                    height="11" alt="мы в youtube">
                 </a>
               </li>
               <li class="footer-social-item">
-                <a href="https://twitter.com/htmlacademy_ru"><img src="images/twitter.svg" width="40" height="40"
-                    alt="мы в twitter">
+                <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru"><img
+                    src="images/twitter_icon.svg" width="15" height="14" alt="мы в twitter">
                 </a>
               </li>
             </ul>
           </section>
           <div class="footer-logo">
             <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-              <img src="images/html-ac-logo-footer.png" width="115" height="33" alt="Логотип html-academy.">
+              <img class="html-link-img" src="images/html-ac-logo-footer.png" width="115" height="33"
+                alt="Логотип html-academy.">
             </a>
           </div>
         </div>
