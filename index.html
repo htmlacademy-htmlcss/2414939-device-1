@@ -8,7 +8,9 @@
   </head>
 
   <body>
+
     <header class="page-header">
+      <div class="header-background"></div>
       <div class="header-wrapper">
         <div class="header-top">
           <a class="logo header-logo" href="index.html">
@@ -19,7 +21,7 @@
           <div class="input">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="search-field">
-                <input class="search-input" type="search" id="header-search" placeholder="Поиск по сайту" name="search">
+                <input class="search-input" type="search" id="header-search" placeholder="Текст поиска" name="search">
                 <svg class="search-icon" claria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="none" viewBox="0 0 16 16">
                   <g clip-path="url(#a)">
@@ -87,7 +89,6 @@
           </nav>
         </div>
       </div>
-      <div class="header-background"> </div>
     </header>
     <main class="main-index">
       <div class="page-container">
@@ -95,9 +96,7 @@
 
         <section class="gallery">
           <h2 class="gallery-title visually-hidden">Фотогалерея</h2>
-          <!-- <div class="top-prod-number">
-            <span class="slider-number">01</span>
-          </div> -->
+          <span class="slider-number"><img src="images\slider-namber-01.png" alt="01"></span>
           <div class="top-prod-slider">
             <div class="top-product-wrapper">
               <div class="top-prod-image">
@@ -117,7 +116,7 @@
                   стандартную
                   камеру.</p>
                 <div class="top-product-button">
-                  <button class="button">Подробнее</button>
+                  <button class="button top-prod-button">Подробнее</button>
                 </div>
                 <div class="top-product-conteiner">
                   <dl class="top-product-specification">
@@ -285,7 +284,7 @@
                 <li class="trans-com-item"><b>СДИК</b></li>
                 <li class="trans-com-item"><b>ТоксБерри</b></li>
               </ul>
-              <button class="button">Подробнее о нас</button>
+              <button class="button about-as-button">Подробнее о нас</button>
             </div>
           </section>
           <section class="contacts">
@@ -309,7 +308,7 @@
                   <li class="contacts-schedule-item">сб—вс: с <time datetime="10:00">10:00</time> до <time
                       datetime="19:00">19:00</time></li>
               </section>
-              <button class="button" type="submit">Напишите нам</button>
+              <button class="button contacts-button" type="submit">Напишите нам</button>
             </div>
           </section>
         </div>
@@ -393,10 +392,12 @@
                 </a>
               </li>
               <li class="footer-social-item">
+
                 <a class="footer-social-link footer-social-youtube"
                   href="https://www.youtube.com/user/htmlacademyru"><img src="images/youtube_icon.svg" width="16"
                     height="11" alt="мы в youtube">
                 </a>
+
               </li>
               <li class="footer-social-item">
                 <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru"><img
@@ -411,6 +412,7 @@
                 alt="Логотип html-academy.">
             </a>
           </div>
+
         </div>
       </footer>
     </div>

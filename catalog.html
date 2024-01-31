@@ -19,7 +19,7 @@
         <div class="header-container">
           <div class="input">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <input class="search-input" type="search" id="header-search" placeholder="Поиск по сайту" name="search">
+              <input class="search-input" type="search" id="header-search" placeholder="Текст поиска" name="search">
               <label for="header-search"><span class="visually-hidden">Текст поиска</span></label>
               <button class="search-btn"><span>Найти</span></button>
             </form>
@@ -154,22 +154,17 @@
                     </div>
                   </div>
                   <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label">
-                      от <input class="range-input" type="number" value="0" name="min-price"></label>
-                    <label class="catalog-filter-label">
-                      до <input class="range-input" type="number" value="5000" name="max-price">
+                    <label class="catalog-filter-label filter-label-min">
+                      <span clas="range-text">от</span><input class="range-input" type="number" value="0"
+                        name="min-price"></label>
+                    <label class="catalog-filter-label filter-label-max">
+                      <span clas="range-text">до</span><input class="range-input" type="number" value="5000"
+                        name="max-price">
                     </label>
                   </div>
                 </div>
               </fieldset>
-              <!-- <fieldset class="filter-fieldset">
-                <div class="filter-name">
-                  <legend>Стоимость</legend>
-                </div>
-                <div class="price-control">
-                  <input type="range" id="price" name="price" min="0" max="5000" value="3000" step="100">
-                </div>
-              </fieldset> -->
+
               <fieldset class="filter-fieldset">
                 <div class="filter-name">
                   <legend>Цвет</legend>
@@ -208,7 +203,7 @@
                   <label class="form-radio" for="bluetooth-false">Нет</label>
                 </div>
               </fieldset>
-              <button class="button filter-bottom" type="submit">Показать</button>
+              <button class="button filter-button" type="submit">Показать</button>
             </form>
           </section>
           <section class="category-items">
@@ -216,7 +211,7 @@
               <h2 class="catalog-section-title">Сортировка:</h2>
               <form class="sort">
                 <label for="sort-name-select"></label>
-                <select name="sort-name" id="sort-name-select">
+                <select class="sort-select" name="sort-name" id="sort-name-select">
                   <option value="popular">Популярные</option>
                   <option value="cheaper">Дешевле</option>
                   <option value="expensive">Дороже</option>
@@ -258,7 +253,10 @@
                   <li class="catalog-item">
                     <article class="catalog-item-info">
                       <a class="item-info" href="#">
-                        <img class="prodact-image" src="images/product-1.png" width="360" height="380" alt="">
+                        <div class="product-image-wrapper">
+                          <img class="prodact-image" src="images/product-1.png" width="360" height="380" alt="">
+                          <button class="button product-info">Подробнее</button>
+                        </div>
                         <div class="item-name">
                           <h3>Любительская <br>
                             селфи-палка
@@ -271,7 +269,10 @@
                   <li class="catalog-item">
                     <article class="catalog-item-info">
                       <a class="item-info" href="#">
-                        <img class="prodact-image" src="images/product-2.png" width="360" height="380" alt="">
+                        <div class="product-image-wrapper">
+                          <img class="prodact-image" src="images/product-2.png" width="360" height="380" alt="">
+                          <button class="button product-info">Подробнее</button>
+                        </div>
                         <div class="item-name">
                           <h3>Профессиональная <br>
                             селфи-палка
@@ -284,7 +285,10 @@
                   <li class="catalog-item">
                     <article class="catalog-item-info">
                       <a class="item-info" href="#">
-                        <img class="prodact-image" src="images/product-3.png" width="360" height="380" alt="">
+                        <div class="product-image-wrapper">
+                          <img class="prodact-image" src="images/product-3.png" width="360" height="380" alt="">
+                          <button class="button product-info">Подробнее</button>
+                        </div>
                         <div class="item-name">
                           <h3>Непотопляемая <br> селфи-палка</h3>
                           <span class="item-price">2500 руб.</span>
@@ -295,7 +299,10 @@
                   <li class="catalog-item">
                     <article class="catalog-item-info">
                       <a class="item-info" href="#">
-                        <img class="prodact-image" src="images/product-4.png" width="360" height="380" alt="">
+                        <div class="product-image-wrapper">
+                          <img class="prodact-image" src="images/product-4.png" width="360" height="380" alt="">
+                          <button class="button product-info">Подробнее</button>
+                        </div>
                         <div class="item-name">
                           <h3>Селфи-палка «Следуй <br> за мной»</h3>
                           <span class="item-price">1500 руб.</span>
@@ -386,10 +393,12 @@
                 </a>
               </li>
               <li class="footer-social-item">
+
                 <a class="footer-social-link footer-social-youtube"
                   href="https://www.youtube.com/user/htmlacademyru"><img src="images/youtube_icon.svg" width="16"
                     height="11" alt="мы в youtube">
                 </a>
+
               </li>
               <li class="footer-social-item">
                 <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru"><img
@@ -404,6 +413,7 @@
                 alt="Логотип html-academy.">
             </a>
           </div>
+
         </div>
       </footer>
     </div>
