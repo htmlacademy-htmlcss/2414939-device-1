@@ -20,7 +20,7 @@
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <input class="search-input" type="search" id="header-search" placeholder="Текст поиска" name="search">
               <label for="header-search"><span class="visually-hidden">Текст поиска</span></label>
-              <button class="search-btn"><span>Найти</span></button>
+              <button type="submit" class="search-btn"><span>Найти</span></button>
             </form>
             <svg class="search-icon" claria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
               width="16" height="16" fill="none" viewBox="0 0 16 16">
@@ -54,7 +54,7 @@
         </div>
         <div class="shop-info">
           <div class="catalog">
-            <button class="dropbtn">Каталог товаров
+            <button type="button" class="dropbtn">Каталог товаров
               <div class="catalog-btn">
                 <div class="catalog-btn-inner"></div>
               </div>
@@ -90,47 +90,53 @@
     <main class="main-container">
       <div class="page-title-container inner">
         <h1 class="page-title">Моноподы для селфи</h1>
+
+
         <nav class="breadcrumbs">
           <ul class="breadcrumbs-list">
             <li>
               <a class="breadcrumbs-link" href="index.html">Главная</a>
+              <span class="breadcrumbs-arrow">
+                <svg class="breadcrumbs-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="4" height="7" fill="none"
+                  viewBox="0 0 4 7">
+                  <g clip-path="url(#a)">
+                    <path fill="#000"
+                      d="m3.8 3.1-3-3C.6-.1.3-.1.1.1 0 .3 0 .7.1.9l2.6 2.6L.1 6.1c-.1.2-.1.5 0 .7.1.1.3.2.4.2.1 0 .3-.1.4-.1l3-3c0-.1.1-.3.1-.4 0-.1-.1-.3-.2-.4Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h4v7H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
             </li>
-            <li class="breadcrumbs-arrow">
-              <svg class="breadcrumbs-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="4" height="7" fill="none"
-                viewBox="0 0 4 7">
-                <g clip-path="url(#a)">
-                  <path fill="#000"
-                    d="m3.8 3.1-3-3C.6-.1.3-.1.1.1 0 .3 0 .7.1.9l2.6 2.6L.1 6.1c-.1.2-.1.5 0 .7.1.1.3.2.4.2.1 0 .3-.1.4-.1l3-3c0-.1.1-.3.1-.4 0-.1-.1-.3-.2-.4Z" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h4v7H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </li>
+
             <li>
               <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+              <span class="breadcrumbs-arrow">
+                <svg class="breadcrumbs-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="4" height="7" fill="none"
+                  viewBox="0 0 4 7">
+                  <g clip-path="url(#a)">
+                    <path fill="#000"
+                      d="m3.8 3.1-3-3C.6-.1.3-.1.1.1 0 .3 0 .7.1.9l2.6 2.6L.1 6.1c-.1.2-.1.5 0 .7.1.1.3.2.4.2.1 0 .3-.1.4-.1l3-3c0-.1.1-.3.1-.4 0-.1-.1-.3-.2-.4Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h4v7H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
             </li>
-            <li class="breadcrumbs-arrow">
-              <svg class="breadcrumbs-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="4" height="7" fill="none"
-                viewBox="0 0 4 7">
-                <g clip-path="url(#a)">
-                  <path fill="#000"
-                    d="m3.8 3.1-3-3C.6-.1.3-.1.1.1 0 .3 0 .7.1.9l2.6 2.6L.1 6.1c-.1.2-.1.5 0 .7.1.1.3.2.4.2.1 0 .3-.1.4-.1l3-3c0-.1.1-.3.1-.4 0-.1-.1-.3-.2-.4Z" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h4v7H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </li>
+
             <li>
               <a class="breadcrumbs-link" href="catalog.html">Моноподы для селфи</a>
             </li>
           </ul>
         </nav>
+
+
       </div>
       <div class="catalog-background">
         <div class="catalog-page content">
@@ -144,7 +150,7 @@
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 119px">
-                      <button class="range-toggle toggle-min">
+                      <button type="button" class="range-toggle toggle-min">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
                       <button class="range-toggle toggle-max">
@@ -202,7 +208,7 @@
                   <label class="form-radio" for="bluetooth-false">Нет</label>
                 </div>
               </fieldset>
-              <button class="button filter-button" type="submit">Показать</button>
+              <button type="submit" class="button filter-button" type="submit">Показать</button>
             </form>
           </section>
           <section class="category-items">
@@ -217,7 +223,7 @@
                 </select>
               </form>
               <div class="catalog-sort-arrows">
-                <button class="sort-arrow sort-arrow-up">
+                <button type="button" class="sort-arrow sort-arrow-up">
                   <span class="visually-hidden">Вверх</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none" viewBox="0 0 12 10">
                     <g clip-path="url(#a)" opacity=".2">
@@ -230,7 +236,7 @@
                     </defs>
                   </svg>
                 </button>
-                <button class="sort-arrow sort-arrow-down">
+                <button type="button" class="sort-arrow sort-arrow-down">
                   <span class="visually-hidden">Вниз</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none" viewBox="0 0 12 10">
                     <g clip-path="url(#a)" opacity=".2">
@@ -249,13 +255,13 @@
               <section class="catalog-container">
                 <h2 class="visually-hidden">товары категории</h2>
                 <ul class="catalog-list">
+
                   <li class="catalog-item">
                     <article class="catalog-item-info">
                       <a class="item-info" href="#">
                         <div class="product-image-wrapper">
                           <img class="product-image" src="images/product-1.png" width="360" height="380" alt="">
-                          <!-- <button class="button product-info">Подробнее</button> -->
-                          <span class="button product-info">Подробнее</span>
+                          <span class="product-info">Подробнее</span>
                         </div>
                         <div class="item-name">
                           <h3>Любительская <br>
@@ -266,10 +272,10 @@
                       </a>
                     </article>
                   </li>
+
+
                   <li class="catalog-item">
-
                     <article class="catalog-item-info">
-
                       <a class="item-info" href="#">
                         <div class="product-image-wrapper">
                           <img class="product-image" src="images/product-2.png" width="360" height="380" alt="">
@@ -284,6 +290,7 @@
                       </a>
                     </article>
                   </li>
+
                   <li class="catalog-item">
                     <article class="catalog-item-info">
                       <a class="item-info" href="#">
@@ -298,6 +305,7 @@
                       </a>
                     </article>
                   </li>
+
                   <li class="catalog-item">
                     <article class="catalog-item-info">
                       <a class="item-info" href="#">
@@ -312,10 +320,11 @@
                       </a>
                     </article>
                   </li>
+
                 </ul>
               </section>
               <div class="pagination-show-more">
-                <button class="button-show-more" type="button">Загрузить ещё</button>
+                <button type="button" class="button-show-more" type="button">Загрузить ещё</button>
               </div>
               <div class="pagination">
                 <a class="pagination-button pagination-button-back" href="#">Назад</a>
