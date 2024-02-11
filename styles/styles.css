@@ -426,7 +426,6 @@ body {
 }
 
 .cart-btn {
-  /* width: 280px; */
   height: 50px;
   color: #000000;
   background-color: #FFFFFF;
@@ -1812,7 +1811,6 @@ p {
   display: flex;
   gap: 16px;
   align-items: center;
-
 }
 
 .breadcrumbs-list li:not(:first-child)::before {
@@ -1821,7 +1819,6 @@ p {
   repeat: no-repeat;
   width: 4px;
   height: 7px;
-  /* margin: 0 16px; */
   opacity: 0.2;
   display: flex;
 
@@ -1983,7 +1980,6 @@ select {
 .filter-fieldset {
   margin: 0;
   padding: 0;
-  /* padding-top: 12px; */
   border: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
