@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Интернет-магазин Device</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="../images/favicon.ico" sizes="32x32">
   </head>
 
   <body>
@@ -23,7 +24,7 @@
                 <input class="search-input" type="search" id="header-search" placeholder="Текст поиска" name="search">
                 <svg class="search-icon" claria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="none" viewBox="0 0 16 16">
-                  <g clip-path="url(#a)">
+                  <g clipPath="url(#a)">
                     <path fill="#000"
                       d="m15.7 14.3-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z" />
                   </g>
@@ -57,15 +58,16 @@
           <!-- Поповер -->
 
           <div class="popover popover-cart">
-            <img class="popover-decor" src="images\popover-decor.png" width="14" height="6">
+            <img class="popover-decor" src="images/popover-decor.png" width="14" height="6"
+              alt="элемент декор поповера">
 
             <div class="popover-content">
               <h2 class="popover-title visually-hidden">Корзина</h2>
               <ul class="cart-items-list">
                 <li class="cart-item">
                   <div class="cart-item-wrapper">
-                    <img class="cart-item-img" src="images\product-1-small-cart.png" width="39"
-                      height="43" "Любительская селфи-палка">
+                    <img class="cart-item-img" src="images/product-1-small-cart.png" width="39" height="43"
+                      alt="Любительская селфи-палка">
                     <p class="cart-item-title">Любительская селфи-палка</p>
                   </div>
 
@@ -79,9 +81,9 @@
                 </li>
                 <li class="cart-item">
                   <div class="cart-item-wrapper">
-                    <img class="cart-item-img" src="images\product-2-small-cart.png" width="39" height="43"
+                    <img class="cart-item-img" src="images/product-2-small-cart.png" width="39" height="43"
                       alt="Профессиональная селфи-палка">
-                    <p class="cart-item-title">Профессиональная селфи-палка</>
+                    <p class="cart-item-title">Профессиональная селфи-палка</p>
                   </div>
 
                   <button type="button" class="cart-item-button">
@@ -109,9 +111,8 @@
         <div class="shop-info">
           <div class="catalog">
             <button type="button" class="dropbtn">Каталог товаров
-              <div class="catalog-btn">
-                <div class="catalog-btn-inner"></div>
-              </div>
+             <span class="catalog-btn">
+              </span>
             </button>
             <nav class="catalog-nav">
               <ul class="category-list">
@@ -149,11 +150,11 @@
           <div class="top-prod-slider">
             <div class="top-product-wrapper top-product-wrapper-1">
               <div class="top-prod-image">
-                <img class="slider-image" src="images\slider-1.png" width="560px" height="548px" alt="Квадрокоптер.">
-                <button type="button" class="slider-button slider-prev" type="button">
+                <img class="slider-image" src="images/slider-1.png" width="560" height="548" alt="Квадрокоптер.">
+                <button type="button" class="slider-button slider-prev">
                   <span class="visually-hidden">Предыдущее фото</span>
                 </button>
-                <button type="button" class="slider-button slider-next" type="button">
+                <button type="button" class="slider-button slider-next">
                   <span class="visually-hidden">Следующее фото</span>
                 </button>
               </div>
@@ -181,11 +182,11 @@
             </div>
             <div class="top-product-wrapper top-product-wrapper-2  visually-hidden">
               <div class="top-prod-image">
-                <img class="slider-image" src="images\slider-2.png" width="560px" height="548px" alt="Фитнес-браслет.">
-                <button type="button" class="slider-button slider-prev" type="button">
+                <img class="slider-image" src="images/slider-2.png" width="560" height="548" alt="Фитнес-браслет.">
+                <button type="button" class="slider-button slider-prev">
                   <span class="visually-hidden">Предыдущее фото</span>
                 </button>
-                <button type="button" class="slider-button slider-next" type="button">
+                <button type="button" class="slider-button slider-next">
                   <span class="visually-hidden">Следующее фото</span>
                 </button>
               </div>
@@ -207,11 +208,11 @@
             </div>
             <div class="top-product-wrapper top-product-wrapper-3  visually-hidden">
               <div class="top-prod-image">
-                <img class="slider-image" src="images\slider-3.png" width="560px" height="548px" alt="Селфи-палка.">
-                <button type="button" class="slider-button slider-prev" type="button">
+                <img class="slider-image" src="images/slider-3.png" width="560" height="548" alt="Селфи-палка.">
+                <button type="button" class="slider-button slider-prev">
                   <span class="visually-hidden">Предыдущее фото</span>
                 </button>
-                <button type="button" class="slider-button slider-next" type="button">
+                <button type="button" class="slider-button slider-next">
                   <span class="visually-hidden">Следующее фото</span>
                 </button>
               </div>
@@ -369,9 +370,9 @@
         </section>
         <button type="button" class="delivery-info content">
           <h3 class="visually-hidden">Информация о доставке под заказ</h3>
-          <img class="delivery-special" src="images\delivery_service.png" width="47" height="31" alt="">
+          <img class="delivery-special" src="images/delivery_service.png" width="47" height="31" alt="">
           <span class="delivery-info-text">Доставим редкий товар под заказ</span>
-          <img class="delivery-special-info" src="images\delivery_logo.png" width="125" height="100" alt="">
+          <img class="delivery-special-info" src="images/delivery_logo.png" width="125" height="100" alt="">
         </button>
         <div class="shop-about-contacts content">
           <section class="about-us">
@@ -408,38 +409,39 @@
                       datetime="22:00">22:00</time></li>
                   <li class="contacts-schedule-item">сб—вс: с <time datetime="10:00">10:00</time> до <time
                       datetime="19:00">19:00</time></li>
+                </ul>
               </section>
-              <button type="button" class="button contacts-button" type="submit">Напишите нам</button>
+              <button type="button" class="button contacts-button">Напишите нам</button>
             </div>
           </section>
         </div>
-        <div class="newsletter-background">
-          <div class="newsletter content">
-            <div class="subscription">
-              <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-              <p>Еженедельный дайджест с обзорами новинок,
-                длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        <div class=" newsletter-background">
+                <div class="newsletter content">
+                  <div class="subscription">
+                    <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+                    <p>Еженедельный дайджест с обзорами новинок,
+                      длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+                  </div>
+                  <div class="subscription-conteiner">
+                    <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                      <label for="subscription-email"><span class="visually-hidden">email</span></label>
+                      <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email"
+                        id="subscription-email" required>
+                      <button type="submit" class="subscription-button">
+                        <span>Подписаться</span>
+                      </button>
+                    </form>
+                    <div class="its-free-container">
+                      <svg class="chek-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"
+                        viewBox="0 0 16 17">
+                        <path fill="#08AF00" d="m15.498 1-9.6 9.3-4.4-4.3v4.7l4.5 4.3 9.5-9.3V1Z" />
+                      </svg>
+                      <p>Это бесплатно</p>
+                    </div>
+                  </div>
+                </div>
             </div>
-            <div class="subscription-conteiner">
-              <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="subscription-email"><span class="visually-hidden">email</span></label>
-                <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email"
-                  id="subscription-email" required>
-                <button type="submit" class="subscription-button">
-                  <span>Подписаться</span>
-                </button>
-              </form>
-              <div class="its-free-container">
-                <svg class="chek-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"
-                  viewBox="0 0 16 17">
-                  <path fill="#08AF00" d="m15.498 1-9.6 9.3-4.4-4.3v4.7l4.5 4.3 9.5-9.3V1Z" />
-                </svg>
-                <p>Это бесплатно</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </main>
     <div class="footer-background">
       <footer class="main-footer inner">
@@ -476,7 +478,7 @@
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a class="footer-social-link footer-social-telegram" href="https://t.me/htmlacademy">
-                  <span><img src="images\telegram_icon.svg" width="16" height="11" alt="мы в telegram"></span>
+                  <span><img src="images/telegram_icon.svg" width="16" height="11" alt="мы в telegram"></span>
                 </a>
               </li>
               <li class="footer-social-item">
@@ -545,7 +547,7 @@
                     value="1" required>
                   <button type="button" class="modal-number-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                       height="16" fill="none" viewBox="0 0 16 16">
-                      <g clip-path="url(#a)">
+                      <g clipPath="url(#a)">
                         <path fill="#000" d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" />
                       </g>
                       <defs>

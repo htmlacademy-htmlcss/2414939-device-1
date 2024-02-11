@@ -1,4 +1,7 @@
-{
+
+  {
+    "extends": "stylelint-config-htmlacademy",
+
   "rules": {
     "block-no-empty": true,
     "comment-no-empty": true,
@@ -91,6 +94,7 @@
       {
         "except": [
           "first-nested"
+
         ],
         "ignore": [
           "after-comment"
