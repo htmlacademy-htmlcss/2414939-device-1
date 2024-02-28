@@ -638,6 +638,9 @@ a {
   text-transform: uppercase;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
+  align-items: center;
+  gap: 7px;
 }
 
 .catalog-background {
@@ -653,6 +656,42 @@ a {
 .category-list {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-width: 211px;
+  height: 120px;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.block-1 {
+  margin-right: 30px;
+}
+
+.block-2 {
+  margin-right: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.catalog-nav li:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.catalog input {
+  display: none;
+}
+
+.catalog label {
+  cursor: pointer;
+}
+
+.catalog :checked ~ .catalog-nav {
+  display: flex;
 }
 
 .category-items {
@@ -673,6 +712,17 @@ a {
   display: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  /* display: flex; */
+  padding-top: 33px;
+  padding-bottom: 27px;
+  padding-left: 60px;
+  background-color: #ffe17f;
+  list-style: none;
+  position: absolute;
+  top: 50px;
+  left: -60px;
+  z-index: 2;
+  width: 1160px;
 }
 
 .button {
@@ -845,10 +895,10 @@ a {
   width: 50px;
   height: 50px;
   border: 2px solid #000000;
-  opacity: 0.3;
   border-radius: 50%;
-  background: transparent;
-  z-index: 2;
+  opacity: 0.3;
+  z-index: 3;
+  cursor: pointer;
 }
 
 .catalog-btn::before {
@@ -860,7 +910,7 @@ a {
   top: 17px;
   left: 17px;
   z-index: 2;
-  background-image: url("../images/drropbtn-plus.svg");
+  background-image: url("../images/dropbtn-plus.svg");
 }
 
 .catalog-btn:hover {
@@ -908,10 +958,6 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/* .shop-info-link:nth-last-child {
-  text-align: right;
-} */
 
 .main-container {
   padding-top: 70px;

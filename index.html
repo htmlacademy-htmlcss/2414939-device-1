@@ -109,17 +109,22 @@
         </div>
         <div class="shop-info">
           <div class="catalog">
-            <button type="button" class="dropbtn">Каталог товаров
-             <span class="catalog-btn">
+            <input type="checkbox" id="menu">
+            <label for="menu"><span class="dropbtn">Каталог товаров
+                <span class="catalog-btn"></span>
               </span>
-            </button>
+            </label>
             <nav class="catalog-nav">
-              <ul class="category-list">
+              <ul class="category-list block-1">
                 <li class="catalog-category-name"><a href="#">Виртуальная реальность</a></li>
-                <li class="catalog-category-name"><a href="catalog.html">Моноподы для селфи</a></li>
+                <li class="catalog-category-name"><a href="catalog.html">Моноподы для cелфи</a></li>
                 <li class="catalog-category-name"><a href="#">Экшн-камеры</a></li>
-                <li class="catalog-category-name"><a href="#">Фитнес-браслеты</a></li>
+              </ul>
+              <ul class="category-list block-2">
+                <li class="catalog-category-name"><a href="#">Фитнес-браслет</a></li>
                 <li class="catalog-category-name"><a href="#">Умные часы</a></li>
+              </ul>
+              <ul class="category-list block-3">
                 <li class="catalog-category-name"><a href="#">Квадрокоптеры</a></li>
               </ul>
             </nav>
@@ -415,32 +420,32 @@
           </section>
         </div>
         <div class=" newsletter-background">
-                <div class="newsletter content">
-                  <div class="subscription">
-                    <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-                    <p>Еженедельный дайджест с обзорами новинок,
-                      длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-                  </div>
-                  <div class="subscription-conteiner">
-                    <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                      <label for="subscription-email"><span class="visually-hidden">email</span></label>
-                      <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email"
-                        id="subscription-email" required>
-                      <button type="submit" class="subscription-button">
-                        <span>Подписаться</span>
-                      </button>
-                    </form>
-                    <div class="its-free-container">
-                      <svg class="chek-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"
-                        viewBox="0 0 16 17">
-                        <path fill="#08AF00" d="m15.498 1-9.6 9.3-4.4-4.3v4.7l4.5 4.3 9.5-9.3V1Z" />
-                      </svg>
-                      <p>Это бесплатно</p>
-                    </div>
-                  </div>
-                </div>
+          <div class="newsletter content">
+            <div class="subscription">
+              <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+              <p>Еженедельный дайджест с обзорами новинок,
+                длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
             </div>
+            <div class="subscription-conteiner">
+              <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label for="subscription-email"><span class="visually-hidden">email</span></label>
+                <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email"
+                  id="subscription-email" required>
+                <button type="submit" class="subscription-button">
+                  <span>Подписаться</span>
+                </button>
+              </form>
+              <div class="its-free-container">
+                <svg class="chek-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"
+                  viewBox="0 0 16 17">
+                  <path fill="#08AF00" d="m15.498 1-9.6 9.3-4.4-4.3v4.7l4.5 4.3 9.5-9.3V1Z" />
+                </svg>
+                <p>Это бесплатно</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
     <div class="footer-background">
       <footer class="main-footer inner">
