@@ -27,16 +27,69 @@
               <button type="submit" class="search-btn"><span>Найти</span></button>
             </form>
           </div>
-          <a class="profile" href="#">Коля Петухов</a>
-          <a class="logout" href="#">Выйти</a>
-          <a class="compare" href="#">Сравнить</a>
-          <a class="cart" href="#">Корзина</a>
+          <div class="user-functions">
+            <div class="profile-log">
+              <a class="profile" href="#">Коля Петухов</a>
+              <a class="logout" href="#">Выйти</a>
+            </div>
+            <a class="compare" href="#">Сравнить</a>
+            <a class="cart" href="#">Корзина</a>
+          </div>
+
+          <!-- Поповер -->
+
+          <div class="popover popover-cart">
+            <img class="popover-decor" src="images/popover-decor.png" width="14" height="6"
+              alt="элемент декор поповера">
+            <div class="popover-content">
+              <h2 class="popover-title visually-hidden">Корзина</h2>
+              <ul class="cart-items-list">
+                <li class="cart-item">
+                  <div class="cart-item-wrapper">
+                    <img class="cart-item-img" src="images/product-1-small-cart.png" width="39" height="43"
+                      alt="Любительская селфи-палка">
+                    <p class="cart-item-title">Любительская селфи-палка</p>
+                  </div>
+                  <button type="button" class="cart-item-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
+                      <path fill="#fff"
+                        d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z" />
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <div class="cart-item-wrapper">
+                    <img class="cart-item-img" src="images/product-2-small-cart.png" width="39" height="43"
+                      alt="Профессиональная селфи-палка">
+                    <p class="cart-item-title">Профессиональная селфи-палка</p>
+                  </div>
+                  <button type="button" class="cart-item-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
+                      <path fill="#fff"
+                        d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z" />
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item cart-total">
+                  <span class="items-quantity">Товаров: 2</span>
+                  <span class="cart-sum">Сумма: 2000 ₽</span>
+                </li>
+                <li class="cart-item cart-btn">
+                  <a class="cart-open-btn" href="#">Открыть корзину</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Поповер -->
         </div>
         <div class="shop-info">
           <div class="catalog">
-            <a class="dropbtn" href="">Каталог товаров
+            <button class="dropbtn" type="button">Каталог товаров
               <span class="catalog-btn"></span>
-            </a>
+            </button>
             <nav class="catalog-nav">
               <ul class="category-list block-1">
                 <li class="catalog-category-name"><a href="#">Виртуальная реальность</a></li>
@@ -280,7 +333,7 @@
           <section class="footer-contacts-address">
             <h4 class="visually-hidden">Адрес магазина</h4>
             <p class="footer-contacts-address-text">
-              Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.
+              Санкт-Петербург, набережная реки Карповки, 5, литера П.
             </p>
           </section>
           <nav class="footer-shop-info-nav">
@@ -310,6 +363,7 @@
                 </a>
               </li>
               <li class="footer-social-item">
+
                 <a class="footer-social-link footer-social-youtube"
                   href="https://www.youtube.com/user/htmlacademyru"><span><img src="images/youtube_icon.svg" width="16"
                       height="11" alt="мы в youtube"></span>
@@ -330,6 +384,7 @@
           </div>
         </div>
       </footer>
+    </div>
     </div>
   </body>
 

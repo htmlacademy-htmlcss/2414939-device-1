@@ -28,9 +28,13 @@
               <button type="submit" class="search-btn"><span>Найти</span></button>
             </form>
           </div>
-          <a class="login" href="#">Войти</a>
-          <a class="compare" href="#">Сравнить</a>
-          <a class="cart" href="#">Корзина</a>
+          <div class="user-functions">
+            <div class="profile-log">
+              <a class="login" href="#">Войти</a>
+            </div>
+            <a class="compare" href="#">Сравнить</a>
+            <a class="cart" href="#">Корзина</a>
+          </div>
 
           <!-- Поповер -->
 
@@ -84,9 +88,9 @@
         </div>
         <div class="shop-info">
           <div class="catalog">
-            <a class="dropbtn" href="">Каталог товаров
+            <button class="dropbtn" type="button">Каталог товаров
               <span class="catalog-btn"></span>
-            </a>
+            </button>
             <nav class="catalog-nav">
               <ul class="category-list block-1">
                 <li class="catalog-category-name"><a href="#">Виртуальная реальность</a></li>
@@ -127,7 +131,7 @@
           <div class="top-prod-slider">
             <div class="top-product-wrapper top-product-wrapper-1">
               <div class="top-prod-image">
-                <img class="slider-image" src="images/slider-1.png" width="560" height="548" alt="Квадрокоптер.">
+                <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
                 <button type="button" class="slider-button slider-prev">
                   <span class="visually-hidden">Предыдущее фото</span>
                 </button>
@@ -246,10 +250,8 @@
                 <figure class="category-name-image">
                   <img class="category-img" src="images/vr-category.svg" width="160" height="160"
                     alt="Категория виртуальная реальность">
-                  </figure>
-                <figcaption class="category-name">Виртуальная реальность</figcaption>
-
-
+                  <figcaption class="category-name">Виртуальная реальность</figcaption>
+                </figure>
               </a>
             </li>
             <li>
@@ -257,8 +259,8 @@
                 <figure class="category-name-image">
                   <img class="category-img" src="images/selfy-sticks-cat.svg" width="160" height="160"
                     alt="Категория моноподы для селфи">
+                  <figcaption class="category-name">Моноподы для селфи</figcaption>
                 </figure>
-                <figcaption class="category-name">Моноподы для селфи</figcaption>
               </a>
             </li>
             <li>
@@ -266,8 +268,8 @@
                 <figure class="category-name-image">
                   <img class="category-img" src="images/action-cam-cat.svg" width="160" height="160"
                     alt="Категория экшн-камеры">
+                  <figcaption class="category-name">Экшн-камеры</figcaption>
                 </figure>
-                <figcaption class="category-name">Экшн-камеры</figcaption>
               </a>
             </li>
             <li>
@@ -275,8 +277,8 @@
                 <figure class="category-name-image">
                   <img class="category-img" src="images/fitnes-bracelet-cat.svg" width="160" height="160"
                     alt="Категория фитнес-браслеты">
+                  <figcaption class="category-name">Фитнес-браслеты</figcaption>
                 </figure>
-                <figcaption class="category-name">Фитнес-браслеты</figcaption>
               </a>
             </li>
             <li>
@@ -284,8 +286,8 @@
                 <figure class="category-name-image">
                   <img class="category-img" src="images/smart-watch-cat.svg" width="160" height="160"
                     alt="Категория умные часы">
+                  <figcaption class="category-name">Умные часы</figcaption>
                 </figure>
-                <figcaption class="category-name">Умные часы</figcaption>
               </a>
             </li>
             <li>
@@ -293,8 +295,8 @@
                 <figure class="category-name-image">
                   <img class="category-img" src="images/qwadro-cat.svg" width="160" height="160"
                     alt="Категория квадрокоптеры">
+                  <figcaption class="category-name">Квадрокоптеры</figcaption>
                 </figure>
-                <figcaption class="category-name">Квадрокоптеры</figcaption>
               </a>
             </li>
           </ul>
@@ -315,7 +317,7 @@
             </ul>
             <div class="service-list">
               <div class="service-item service-item-1 ">
-                <div class="servis-description">
+                <div class="service-description">
                   <h3 class="title servis-title">Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! Ведь
                     <br>
@@ -327,7 +329,7 @@
                 </div>
               </div>
               <div class="service-item service-item-2 visually-hidden">
-                <div class="servis-description">
+                <div class="service-description">
                   <h3 class="title servis-title">Гарантия</h3>
                   <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим
                     вам
@@ -340,7 +342,7 @@
                 </div>
               </div>
               <div class="service-item service-item-3 visually-hidden">
-                <div class="servis-description">
+                <div class="service-description">
                   <h3 class="title servis-title">Кредит</h3>
                   <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
                     условия
@@ -437,7 +439,7 @@
           <section class="footer-contacts-address">
             <h4 class="visually-hidden">Адрес магазина</h4>
             <p class="footer-contacts-address-text">
-              Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.
+              Санкт-Петербург, набережная реки Карповки, 5, литера П.
             </p>
           </section>
           <nav class="footer-shop-info-nav">
