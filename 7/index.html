@@ -34,56 +34,60 @@
             <a class="login" href="#">Войти</a>
           </div>
           <a class="compare" href="#">Сравнить</a>
-          <a class="cart" href="#">Корзина</a>
-        </div>
-
-        <!-- Поповер -->
-
-        <div class="popover popover-cart">
-          <img class="popover-decor" src="images/popover-decor.png" width="14" height="6" alt="элемент декор поповера">
-          <div class="popover-content">
-            <h2 class="popover-title visually-hidden">Корзина</h2>
-            <ul class="cart-items-list">
-              <li class="cart-item">
-                <div class="cart-item-wrapper">
-                  <img class="cart-item-img" src="images/product-1-small-cart.png" width="39" height="43"
-                    alt="Любительская селфи-палка">
-                  <p class="cart-item-title">Любительская селфи-палка</p>
-                </div>
-                <button type="button" class="cart-item-button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
-                    <path fill="#fff"
-                      d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z" />
-                  </svg>
-                  <span class="visually-hidden">Удалить из корзины</span>
-                </button>
-              </li>
-              <li class="cart-item">
-                <div class="cart-item-wrapper">
-                  <img class="cart-item-img" src="images/product-2-small-cart.png" width="39" height="43"
-                    alt="Профессиональная селфи-палка">
-                  <p class="cart-item-title">Профессиональная селфи-палка</p>
-                </div>
-                <button type="button" class="cart-item-button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
-                    <path fill="#fff"
-                      d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z" />
-                  </svg>
-                  <span class="visually-hidden">Удалить из корзины</span>
-                </button>
-              </li>
-              <li class="cart-item cart-total">
-                <span class="items-quantity">Товаров: 2</span>
-                <span class="cart-sum">Сумма: 2000 ₽</span>
-              </li>
-              <li class="cart-item cart-btn">
-                <a class="cart-open-btn" href="#">Открыть корзину</a>
-              </li>
-            </ul>
+          <div class="cart-wrapper">
+            <a class="cart" href="#">Корзина</a>
           </div>
+          <!-- Поповер -->
+          <div class="popover popover-cart">
+            <img class="popover-decor" src="images/popover-decor.png" width="14" height="6"
+              alt="элемент декор поповера">
+            <div class="popover-content">
+              <h2 class="popover-title visually-hidden">Корзина</h2>
+              <ul class="cart-items-list">
+                <li class="cart-item">
+                  <div class="cart-item-wrapper">
+                    <button class="cart-item-btn" type="button">
+                      <img class="cart-item-img" src="images/product-1-small-cart.png" width="39" height="43"
+                        alt="Любительская селфи-палка">
+                      <span class="cart-item-title">Любительская селфи-палка</span>
+                    </button>
+                  </div>
+                  <button class="cart-item-button" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
+                      <path fill="#fff"
+                        d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z" />
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <div class="cart-item-wrapper">
+                    <button class="cart-item-btn" type="button">
+                      <img class="cart-item-img" src="images/product-2-small-cart.png" width="39" height="43"
+                        alt="Профессиональная селфи-палка">
+                      <span class="cart-item-title">Профессиональная селфи-палка</span>
+                    </button>
+                  </div>
+                  <button class="cart-item-button" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
+                      <path fill="#fff"
+                        d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z" />
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item cart-total">
+                  <span class="items-quantity">Товаров: 2</span>
+                  <span class="cart-sum">Сумма: 2000 ₽</span>
+                </li>
+                <li class="cart-item cart-btn">
+                  <a class="cart-open-btn" href="#">Открыть корзину</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Поповер -->
         </div>
-
-        <!-- Поповер -->
 
       </div>
       <div class="shop-info">
@@ -391,7 +395,7 @@
         <section class="contacts">
           <h2 class="contacts-title">Контакты</h2>
           <div class="contacts-container">
-            <p>Вы можете забрать товар сами, заехав в наш офис.
+            <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.
               Заодно сможете проверить работоспособность покупки.</p>
             <section class="shop-adress">
               <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
@@ -448,6 +452,7 @@
         <a class="footer-shop-logo" href="index.html">
           <img src="images/footer-logo.png" width="145" height="36" alt="Логотип магазина Device.">
         </a>
+
         <section class="footer-contacts-address">
           <h4 class="visually-hidden">Адрес магазина</h4>
           <address>

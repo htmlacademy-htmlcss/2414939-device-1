@@ -44,7 +44,7 @@
 }
 
 html {
-  height: 100%;
+  height: 100dvh;
 }
 
 body {
@@ -114,7 +114,7 @@ p {
 }
 
 .header-top {
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 
 }
 
@@ -355,8 +355,12 @@ p {
   opacity: 0.3;
 }
 
-.cart:focus-within .popover {
-  visibility: visible;
+.cart-wrapper {
+  display: flex;
+}
+
+.cart-wrapper:focus-within+.popover {
+  display: block;
 }
 
 .popover {
@@ -373,7 +377,8 @@ p {
   line-height: 20px;
   min-height: 186px;
   padding: 20px;
-  visibility: hidden;
+  display: none;
+
 }
 
 .popover-decor {
@@ -411,6 +416,24 @@ p {
 
 .cart-item-wrapper:active {
   opacity: 0.3;
+}
+
+.cart-item-wrapper:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.cart-item-btn {
+  display: flex;
+  padding: 0;
+  color: #ffffff;
+  background-color: #000000;
+  margin: 0;
+  border: none;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
 }
 
 .cart-item-button {
@@ -798,7 +821,7 @@ a {
   transform: translateY(-50%);
   left: 0;
   z-index: -1;
-  width: inherit;
+  width: 100%;
   height: 8px;
   background-color: #FFE17F;
   visibility: hidden;
@@ -1716,7 +1739,7 @@ p {
 }
 
 .newsletter {
-  padding: 61px 0 56px;
+  padding: 61px 0 48px;
 }
 
 .newsletter-background {
@@ -1741,6 +1764,7 @@ p {
 .subscription p {
   max-width: 560px;
   padding-left: 7px;
+  padding-right: 25px
 }
 
 .subscription-title {
@@ -1831,6 +1855,14 @@ p {
 .contacts-address-text {
   font-style: normal;
   margin-bottom: 8px;
+}
+
+.contacts-phone {
+  text-decoration: underline;
+}
+
+.contacts-text {
+  padding-right: 34px;
 }
 
 .page-title-container {
@@ -3030,10 +3062,6 @@ a span {
   opacity: 0.3;
 }
 
-.modal-name-field:active+.modal-name-text {
-  display: none;
-}
-
 .modal-email-field:invalid {
   border: 2px solid #FF3D3D;
 }
@@ -3079,6 +3107,7 @@ a span {
 .modal-button {
   margin-right: auto;
   isolation: isolate;
+  width: 200px;
 }
 
 .modal-field-number-title {
@@ -3110,13 +3139,14 @@ a span {
   text-transform: none;
   padding-top: 19px;
   padding-left: 19px;
+  padding-right: 19px;
   width: 200px;
   height: 160px;
   position: absolute;
   top: 34px;
   left: 1px;
   display: none;
-}
+  }
 
 .tooltip {
   width: 26px;
