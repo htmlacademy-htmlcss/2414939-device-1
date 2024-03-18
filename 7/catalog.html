@@ -21,10 +21,9 @@
         <div class="input">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="search-field">
-              <input class="search-input" type="search" id="header-search" placeholder="Текст поиска" name="search">
+              <input class="search-input" type="search" id="header-search" placeholder="Поиск по сайту" name="search">
               <span class="search-icon"></span>
             </div>
-            <label for="header-search"><span class="visually-hidden">Текст поиска</span></label>
             <button type="submit" class="search-btn"><span>Найти</span></button>
           </form>
         </div>
@@ -33,65 +32,62 @@
             <a class="profile" href="#">Коля Петухов</a>
             <a class="logout" href="#">Выйти</a>
           </div>
-          <a class="compare" href="#">Сравнить</a>
-          <div class="cart-wrapper">
-            <a class="cart" href="#">Корзина</a>
-          </div>
-
-
-          <!-- Поповер -->
-
-          <div class="popover popover-cart">
-            <img class="popover-decor" src="images/popover-decor.png" width="14" height="6"
-              alt="элемент декор поповера">
-            <div class="popover-content">
-              <h2 class="popover-title visually-hidden">Корзина</h2>
-              <ul class="cart-items-list">
-                <li class="cart-item">
-                  <div class="cart-item-wrapper">
-                    <button class="cart-item-btn" type="button">
-                      <img class="cart-item-img" src="images/product-1-small-cart.png" width="39" height="43"
-                        alt="Любительская селфи-палка">
-                      <span class="cart-item-title">Любительская селфи-палка</span>
+          <div class="goods-operation">
+            <div class="compare-wrapper">
+              <a class="compare" href="#">Сравнить</a>
+            </div>
+            <div class="cart-wrapper">
+              <a class="cart" href="#">Корзина</a>
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <div class="cart-item-wrapper">
+                        <button class="cart-item-btn" type="button">
+                          <img class="cart-item-img" src="images/product-1-small-cart.png" width="39" height="43"
+                            alt="Любительская селфи-палка">
+                          <span class="cart-item-title">Любительская селфи-палка</span>
+                        </button>
+                      </div>
+                      <button class="cart-item-button" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
+                          <path fill="#fff"
+                            d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <div class="cart-item-wrapper">
+                        <button class="cart-item-btn" type="button">
+                          <img class="cart-item-img" src="images/product-2-small-cart.png" width="39" height="43"
+                            alt="Профессиональная селфи-палка">
+                          <span class="cart-item-title">Профессиональная селфи-палка</span>
+                        </button>
+                      </div>
+                      <button class="cart-item-button" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
+                          <path fill="#fff"
+                            d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="cart-total">
+                    <span class="items-quantity">Товаров: 2</span>
+                    <span class="cart-sum">Сумма: 2000 ₽</span>
+                  </div>
+                  <div class="popover-btn">
+                    <button class="cart-btn" type="button">
+                      <span class="cart-open-btn">Открыть корзину</span>
                     </button>
                   </div>
-                  <button class="cart-item-button" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
-                      <path fill="#fff"
-                        d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z" />
-                    </svg>
-                    <span class="visually-hidden">Удалить из корзины</span>
-                  </button>
-                </li>
-                <li class="cart-item">
-                  <div class="cart-item-wrapper">
-                    <button class="cart-item-btn" type="button">
-                      <img class="cart-item-img" src="images/product-2-small-cart.png" width="39" height="43"
-                        alt="Профессиональная селфи-палка">
-                      <span class="cart-item-title">Профессиональная селфи-палка</span>
-                    </button>
-                  </div>
-                  <button class="cart-item-button" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
-                      <path fill="#fff"
-                        d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z" />
-                    </svg>
-                    <span class="visually-hidden">Удалить из корзины</span>
-                  </button>
-                </li>
-                <li class="cart-item cart-total">
-                  <span class="items-quantity">Товаров: 2</span>
-                  <span class="cart-sum">Сумма: 2000 ₽</span>
-                </li>
-                <li class="cart-item cart-btn">
-                  <a class="cart-open-btn" href="#">Открыть корзину</a>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Поповер -->
         </div>
-
       </div>
       <div class="shop-info">
         <div class="catalog">
@@ -99,6 +95,7 @@
             <span class="catalog-btn"></span>
           </button>
           <nav class="catalog-nav">
+            <h4 class="visually-hidden">категории каталога</h4>
             <ul class="category-list block-1">
               <li class="catalog-category-name"><a class="category-list-link" href="#">Виртуальная реальность</a></li>
               <li class="catalog-category-name"><a class="category-list-link active" href="catalog.html">Моноподы для
@@ -135,6 +132,7 @@
     <div class="page-title-container inner">
       <h1 class="page-title">Моноподы для селфи</h1>
       <nav class="breadcrumbs">
+        <h4 class="visually-hidden">навигация по ката</h4>
         <ul class="breadcrumbs-list">
           <li><a class="breadcrumbs-link" href="index.html">Главная</a></li>
           <li><a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a></li>
@@ -213,7 +211,6 @@
                 <label class="form-radio" for="bluetooth-false">Нет</label>
               </div>
             </fieldset>
-
           </form>
           <button type="submit" class="button filter-button">Показать</button>
         </section>
@@ -292,7 +289,6 @@
                     <a class="item-info" href="#">
                       <div class="product-image-wrapper">
                         <img class="product-image" src="images/product-4.png" width="360" height="380" alt="">
-
                       </div>
                       <div class="item-name">
                         <h3>Селфи-палка «Следуй <br> за мной»</h3>
@@ -336,62 +332,61 @@
   <div class="footer-background">
     <footer class="main-footer inner">
       <div class="footer-container">
-        <a class="footer-shop-logo" href="index.html">
-          <img src="images/footer-logo.png" width="145" height="36" alt="Логотип магазина Device.">
-        </a>
-        <section class="footer-contacts-address">
-          <h4 class="visually-hidden">Адрес магазина</h4>
-          <address>
-            <p class="footer-contacts-address-text">
-              Санкт-Петербург, набережная реки Карповки, 5, литера П.
-            </p>
-          </address>
-        </section>
-        <nav class="footer-shop-info-nav">
-          <h4 class="visually-hidden">информация и контакты</h4>
-          <ul class="footer-shop-info">
-            <li class="footer-shop-info-item">
-              <a class="footer-shop-info-link" href="#">Доставка</a>
-            </li>
-            <li class="footer-shop-info-item">
-              <a class="footer-shop-info-link" href="#">Гарантия</a>
-            </li>
-            <li class="footer-shop-info-item">
-              <a class="footer-shop-info-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="footer-contacts footer-contacts-phone">
-          <h4 class="visually-hidden">Телефон магазина</h4>
-          <a class="footer-contact-phone" href="tel:+78121212">Тел.: +7 (812) 812-12-12</a>
-        </section>
-        <section class="footer-social">
-          <h4 class="visually-hidden">мы в социальных сетях</h4>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="footer-social-link footer-social-telegram" href="https://t.me/htmlacademy">
-                <span><img src="images/telegram_icon.svg" width="16" height="11" alt="мы в telegram"></span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-
-              <a class="footer-social-link footer-social-youtube"
-                href="https://www.youtube.com/user/htmlacademyru"><span><img src="images/youtube_icon.svg" width="16"
-                    height="11" alt="мы в youtube"></span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru">
-                <span><img src="images/twitter_icon.svg" width="15" height="14" alt="мы в twitter"></span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <div class="footer-logo">
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-            <img class="html-link-img" src="images/html-ac-logo-footer.png" width="115" height="33"
-              alt="Логотип html-academy.">
+        <div class="footer-top">
+          <a class="footer-shop-logo" href="index.html">
+            <img src="images/footer-logo.png" width="145" height="36" alt="Логотип магазина Device.">
           </a>
+        </div>
+        <div class="footer-meddle">
+          <section class="footer-contacts-address">
+            <h4 class="visually-hidden">Адрес магазина</h4>
+            <address>
+              <p class="footer-contacts-address-text">
+                Санкт-Петербург, набережная реки Карповки, 5, литера П.
+              </p>
+            </address>
+          </section>
+          <nav class="footer-shop-info-nav">
+            <h4 class="visually-hidden">информация и контакты</h4>
+            <ul class="footer-shop-info">
+              <li class="footer-shop-info-item">
+                <a class="footer-shop-info-link" href="#">Доставка</a>
+              </li>
+              <li class="footer-shop-info-item">
+                <a class="footer-shop-info-link" href="#">Гарантия</a>
+              </li>
+              <li class="footer-shop-info-item">
+                <a class="footer-shop-info-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <section class="footer-contacts footer-contacts-phone">
+            <h4 class="visually-hidden">Телефон магазина</h4>
+            <a class="footer-contact-phone" href="tel:+78121212">Тел.: +7 (812) 812-12-12</a>
+          </section>
+        </div>
+        <div class="footer-bottom">
+          <section class="footer-social">
+            <h4 class="visually-hidden">мы в социальных сетях</h4>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-telegram" href="https://t.me/htmlacademy"></a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-youtube"
+                  href="https://www.youtube.com/user/htmlacademyru"></a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru"></a>
+              </li>
+            </ul>
+          </section>
+          <div class="footer-logo">
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+              <img class="html-link-img" src="images/html-ac-logo-footer.png" width="115" height="33"
+                alt="Логотип html-academy.">
+            </a>
+          </div>
         </div>
       </div>
     </footer>
