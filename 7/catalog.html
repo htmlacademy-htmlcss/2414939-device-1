@@ -24,7 +24,7 @@
               <input class="search-input" type="search" id="header-search" placeholder="Поиск по сайту" name="search">
               <span class="search-icon"></span>
             </div>
-            <button type="submit" class="search-button"><span>Найти</span></button>
+            <button type="submit" class="search-button">Найти</button>
           </form>
           <div class="header-user-controls">
             <div class="login">
@@ -36,52 +36,41 @@
                 <a class="compare-link" href="#">Сравнить</a>
               </div>
               <div class="cart-wrapper">
-                <a class="cart-link" href="#">Корзина</a>
-                <div class="popover">
-                  <div class="popover-content">
-                    <ul class="popover-cart-items-list">
+                <button class="cart-link" href="#">Корзина</button>
+                <div class="cart-preview-popover">
+                  <div class="cart-preview-content">
+                    <ul class="cart-preview-items-list">
                       <li class="cart-item">
                         <div class="cart-item-wrapper">
-                          <button class="cart-item-btn" type="button">
+                          <a class="cart-item-link" href="#">
                             <img class="cart-item-img" src="images/product-1-small-cart.png" width="39" height="43"
                               alt="Любительская селфи-палка">
                             <span class="cart-item-title">Любительская селфи-палка</span>
-                          </button>
+                          </a>
                         </div>
                         <button class="cart-item-button" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none"
-                            viewBox="0 0 10 10">
-                            <path fill="#fff"
-                              d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z" />
-                          </svg>
                           <span class="visually-hidden">Удалить из корзины</span>
                         </button>
                       </li>
                       <li class="cart-item">
                         <div class="cart-item-wrapper">
-                          <button class="cart-item-btn" type="button">
+                          <a class="cart-item-link" href="#">
                             <img class="cart-item-img" src="images/product-2-small-cart.png" width="39" height="43"
                               alt="Профессиональная селфи-палка">
                             <span class="cart-item-title">Профессиональная селфи-палка</span>
-                          </button>
+                          </a>
                         </div>
                         <button class="cart-item-button" type="button">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none"
-                            viewBox="0 0 10 10">
-                            <path fill="#fff"
-                              d="M10 .91 9.09 0 5 4.09.91 0 0 .91 4.09 5 0 9.09l.91.91L5 5.91 9.09 10l.91-.91L5.91 5 10 .91Z" />
-                          </svg>
                           <span class="visually-hidden">Удалить из корзины</span>
                         </button>
                       </li>
                     </ul>
-                    <div class="popover-cart-result">
+                    <div class="cart-preview-result">
                       <span class="items-quantity">Товаров: 2</span>
                       <span class="cart-sum">Сумма: 2000 ₽</span>
                     </div>
-                    <div class="popover-btn-wrapper">
-                      <button class="cart-btn" type="button">
-                        <span class="cart-open-btn">Открыть корзину</span>
+                    <div class="cart-preview-button-wrapper">
+                      <button class="cart-btn" type="button"><span>Открыть корзину</span>
                       </button>
                     </div>
                   </div>
@@ -92,12 +81,13 @@
         </div>
         <div class="header-shop-info">
           <div class="header-catalog">
-            <button class="catalog-drop-btn" type="button">Каталог товаров
+            <button class="catalog-drop-btn" type="button">
+              Каталог товаров
               <span class="catalog-btn"></span>
             </button>
             <nav class="header-catalog-nav">
               <h4 class="visually-hidden">категории каталога</h4>
-              <ul class="catalog-nav-list block-1">
+              <ul class="catalog-nav-list">
                 <li class="catalog-category-name">
                   <a class="category-list-link" href="#">Виртуальная реальность</a>
                 </li>
@@ -108,7 +98,7 @@
                   <a class="category-list-link" href="#">Экшн-камеры</a>
                 </li>
               </ul>
-              <ul class="catalog-nav-list block-2">
+              <ul class="catalog-nav-list">
                 <li class="catalog-category-name">
                   <a class="category-list-link" href="#">Фитнес-браслет</a>
                 </li>
@@ -116,7 +106,7 @@
                   <a class="category-list-link" href="#">Умные часы</a>
                 </li>
               </ul>
-              <ul class="catalog-nav-list block-3">
+              <ul class="catalog-nav-list">
                 <li class="catalog-category-name">
                   <a class="category-list-link" href="#">Квадрокоптеры</a>
                 </li>
@@ -140,6 +130,7 @@
         </div>
       </div>
     </div>
+    </div>
   </header>
   <main class="main-container">
     <div class="page-title-container inner">
@@ -160,18 +151,16 @@
             <div class="catalog-filters-title-wrapper">
               <h2 class="catalog-filters-title">Фильтр:</h2>
             </div>
-            <fieldset class="filter-fieldset">
-              <div class="filter-name">
-                <span>Стоимость:</span>
-              </div>
+            <fieldset class="filter-value-select">
+              <legend class="filter-name">Стоимость</legend>
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 9px; width: 101px">
+                  <div class="range-bar">
                     <button type="button" class="range-toggle toggle-min">
-                      <span class="toggle"></span>
+                      <!-- <span class="toggle"></span> -->
                     </button>
                     <button type="button" class="range-toggle toggle-max">
-                      <span class="toggle"></span>
+                      <!-- <span class="toggle"></span> -->
                     </button>
                   </div>
                 </div>
@@ -186,10 +175,8 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="filter-fieldset">
-              <div class="filter-name">
-                <span>Цвет</span>
-              </div>
+            <fieldset class="filter-value-select">
+              <legend class="filter-name">Цвет</legend>
               <div class="form-field-item">
                 <input id="black" class="checkbox-item" type="checkbox" name="color-black" checked>
                 <label class="form-check" for="black">Черный</label>
@@ -211,10 +198,8 @@
                 <label class="form-check" for="pink">Розовый</label>
               </div>
             </fieldset>
-            <fieldset class="filter-fieldset">
-              <div class="filter-name">
-                <span>Bluetooth</span>
-              </div>
+            <fieldset class="filter-value-select">
+              <div class="filter-name">Bluetooth</div>
               <div class="form-field-item">
                 <input id="bluetooth-true" class="radio-item" type="radio" name="bluetooth" value="true" checked>
                 <label class="form-radio" for="bluetooth-true">Есть</label>
@@ -264,7 +249,7 @@
                         <p class="catalog-item-price">500 &#8381;</p>
                       </div>
                     </a>
-                    <span class="catalog-item-info">Подробнее</span>
+                    <a class="catalog-item-info" href="#">Подробнее</a>
                   </article>
                 </li>
                 <li class="catalog-item">
@@ -280,7 +265,7 @@
                         <p class="catalog-item-price">1500 &#8381;</p>
                       </div>
                     </a>
-                    <span class="catalog-item-info">Подробнее</span>
+                    <a class="catalog-item-info" href="#">Подробнее</a>
                   </article>
                 </li>
                 <li class="catalog-item">
@@ -294,7 +279,7 @@
                         <p class="catalog-item-price">2500 &#8381;</p>
                       </div>
                     </a>
-                    <span class="catalog-item-info">Подробнее</span>
+                    <a class="catalog-item-info" href="#">Подробнее</a>
                   </article>
                 </li>
                 <li class="catalog-item">
@@ -308,7 +293,7 @@
                         <p class="catalog-item-price">1500 &#8381;</p>
                       </div>
                     </a>
-                    <span class="catalog-item-info">Подробнее</span>
+                    <a class="catalog-item-info" href="#">Подробнее</a>
                   </article>
                 </li>
               </ul>

@@ -300,6 +300,10 @@ body {
   line-height: 30px;
   border: none;
   background: transparent;
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
 }
 
 .cart-link::after {
@@ -314,15 +318,21 @@ body {
 }
 
 .cart-link::before {
-  content: "";
+  content: "2";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  font-size: 14px;
   left: -18px;
   width: 21px;
   height: 21px;
   z-index: 1;
-  background-image: url("../images/cart-full.svg");
+  text-align: center;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart-link:hover {
@@ -337,11 +347,11 @@ body {
   display: flex;
 }
 
-.cart-wrapper:focus-within .popover {
+.cart-wrapper:focus-within .cart-preview-popover {
   display: block;
 }
 
-.popover {
+.cart-preview-popover {
   position: absolute;
   top: 40px;
   right: -80px;
@@ -358,7 +368,7 @@ body {
   max-width: 320px;
 }
 
-.popover::before {
+.cart-preview-popover::before {
   content: "";
   position: absolute;
   left: 54%;
@@ -372,13 +382,13 @@ body {
   height: 43px;
 }
 
-.popover-content {
+.cart-preview-content {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.popover-cart-items-list {
+.cart-preview-items-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,7 +418,7 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
-.cart-item-btn {
+.cart-item-link {
   display: flex;
   padding: 0;
   color: #ffffff;
@@ -427,6 +437,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   background-color: #000000;
   border: none;
   -webkit-box-align: start;
@@ -436,6 +447,7 @@ body {
   margin: 0;
   margin-left: auto;
   height: 10px;
+  width: 10px;
   cursor: pointer;
 }
 
@@ -445,6 +457,16 @@ body {
 
 .cart-item-button:active {
   opacity: 0.3;
+}
+
+.cart-item-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-image: url("../images/cross-cart.svg");
 }
 
 .cart-item {
@@ -467,7 +489,7 @@ body {
   margin-right: 23px;
 }
 
-.popover-cart-result {
+.cart-preview-result {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,12 +521,13 @@ body {
 
 .cart-btn:hover {
   background-color: #FFE17F;
-  cursor: pointer;
+    cursor: pointer;
 }
 
-.cart-btn:active .cart-open-btn {
+.cart-btn:active span{
   opacity: 0.3;
-  outline: transparent;
+    outline: transparent;
+
 }
 
 .cart-btn:disabled {
@@ -515,11 +538,7 @@ body {
   border: 1px solid #7B61FF;
 }
 
-.cart-open-btn {
-  text-align: center;
-}
-
-.popover-btn-wrapper {
+.cart-preview-button-wrapper {
   padding: 20px 0;
   text-align: center;
 }
@@ -962,7 +981,7 @@ a {
   opacity: 1;
 }
 
-.catalog-drop-btn:active .catalog-btn::before {
+.catalog-drop-btn:focus .catalog-btn::before {
   width: 16px;
   height: 2px;
   background-image: url("../images/dropbtn-minus.svg");
@@ -1220,7 +1239,7 @@ figure {
   top: 500px;
 }
 
-.slider-item-specifications {
+/* .slider-item-specifications {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1233,7 +1252,7 @@ figure {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
+} */
 
 .slider-item-description {
   display: -webkit-box;
@@ -1279,16 +1298,16 @@ figure {
   align-items: start;
 }
 
-.data {
+.specification-data {
   margin: 0;
   font-size: 36px;
 }
 
-.spec {
+.specification-name {
   font-size: 16px;
 }
 
-.slider-item-specifications-scroll {
+.slider-item-specifications {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1296,7 +1315,7 @@ figure {
   margin: 0;
 }
 
-.slider-item-specifications-scroll-3 {
+.slider-item-specifications::last-child {
   gap: 40px;
 }
 
@@ -1323,10 +1342,6 @@ figure {
   display: block;
 }
 
-.trans-com-item {
-  display: block;
-}
-
 .contacts-schedule-item {
   display: block;
   margin-bottom: 7px;
@@ -1349,7 +1364,7 @@ button {
   letter-spacing: normal;
 }
 
-.about-as-container {
+.about-us-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1469,7 +1484,7 @@ h3 {
   visibility: visible;
 }
 
-.service-menu-button-activ {
+.service-menu-button-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1488,12 +1503,12 @@ h3 {
   padding-left: 19px;
 }
 
-.service-menu-button-activ:hover {
+.service-menu-button-active:hover {
   background-color: #000000;
   padding-left: 60px;
 }
 
-.service-menu-button-activ:focus {
+.service-menu-button-active:focus {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
@@ -1549,7 +1564,7 @@ h3 {
   padding: 0 63px 0 116px;
 }
 
-.service-item-image {
+.service-item-image-wrapper {
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -1591,6 +1606,7 @@ h3 {
   align-items: center;
   height: 20px;
   letter-spacing: -0.02em;
+  font-weight: 700;
 }
 
 .trans-com-item::before {
@@ -2005,12 +2021,12 @@ select {
   display: inline;
 }
 
-.filter-fieldset {
+.filter-value-select  {
   margin: 0;
   padding: 0;
   border: none;
   width: 200px;
-  border-top: 2px solid #000000;
+  /* border-top: 2px solid #000000; */
 }
 
 .filter-name {
@@ -2018,12 +2034,16 @@ select {
   line-height: 20px;
   margin-bottom: 25px;
   padding-top: 12px;
+  border: none;
+  border-top: 2px solid #000000;
+  width: 100%;
 }
-
-.fieldset {
+/*
+fieldset {
   padding: 0;
   margin: 0;
-}
+  border:0 none;
+} */
 
 .form-field-item {
   margin: 0;
@@ -2127,8 +2147,9 @@ select {
 }
 
 .range-toggle:hover {
-  opacity: 0.5;
+  /* opacity: 0.5; */
   background-color: #EBEBEB;
+  border-color: #00000050;
 }
 
 .range-toggle:active {
@@ -2370,6 +2391,13 @@ select {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.news-subscription-text-wrapper::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/its-free-icon.svg");
 }
 
 .load-more {
@@ -3019,10 +3047,12 @@ select {
   margin-top: -3px;
 }
 
-.tooltip-icon {
+.tooltip-toggle::before {
+  content: "";
   display: block;
   width: 26px;
   height: 26px;
+  background-image: url("../images/tooltip-icon.svg");
 }
 
 .tooltip-text {
