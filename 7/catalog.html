@@ -11,18 +11,17 @@
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="header-container">
       <div class="header-inner">
         <div class="header-logo-wrapper">
           <a class="header-logo-link" href="index.html">
             <img src="images/main-logo.png" width="145" height="36" alt="Логотип магазина Device.">
           </a>
         </div>
-        <div class="header-middle">
+        <div class="header-user-navigation">
           <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="search-field">
-              <input class="search-input" type="search" id="header-search" placeholder="Поиск по сайту" name="search">
-              <span class="search-icon"></span>
+              <input class="search-input" type="search" id="header-search" placeholder="Текст поиска" name="search">
             </div>
             <button type="submit" class="search-button">Найти</button>
           </form>
@@ -36,7 +35,7 @@
                 <a class="compare-link" href="#">Сравнить</a>
               </div>
               <div class="cart-wrapper">
-                <button class="cart-link" href="#">Корзина</button>
+                <button class="cart-link">Корзина</button>
                 <div class="cart-preview-popover">
                   <div class="cart-preview-content">
                     <ul class="cart-preview-items-list">
@@ -130,10 +129,9 @@
         </div>
       </div>
     </div>
-    </div>
   </header>
   <main class="main-container">
-    <div class="page-title-container inner">
+    <div class="page-title-container">
       <h1 class="page-title">Моноподы для селфи</h1>
       <nav class="breadcrumbs">
         <h4 class="visually-hidden">навигация по каталогу</h4>
@@ -145,7 +143,7 @@
       </nav>
     </div>
     <div class="catalog-background">
-      <div class="catalog-page content">
+      <div class="catalog-page content-wrapper">
         <section class="catalog-filters">
           <form class="catalog-filters-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="catalog-filters-title-wrapper">
@@ -157,10 +155,8 @@
                 <div class="range-scale">
                   <div class="range-bar">
                     <button type="button" class="range-toggle toggle-min">
-                      <!-- <span class="toggle"></span> -->
                     </button>
                     <button type="button" class="range-toggle toggle-max">
-                      <!-- <span class="toggle"></span> -->
                     </button>
                   </div>
                 </div>
@@ -328,63 +324,60 @@
     </div>
   </main>
   <div class="footer-background">
-    <footer class="footer inner">
-      <div class="footer-container">
-        <div class="footer-top">
-          <a class="footer-shop-logo-link" href="index.html">
-            <img src="images/footer-logo.png" width="145" height="36" alt="Логотип магазина Device.">
+    <footer class="footer-container">
+      <div class="footer-top">
+        <a class="footer-shop-logo-link" href="index.html">
+          <img src="images/footer-logo.png" width="145" height="36" alt="Логотип магазина Device.">
+        </a>
+      </div>
+      <div class="footer-middle">
+        <section class="footer-contacts-address">
+          <h4 class="visually-hidden">Адрес магазина</h4>
+          <address>
+            <p class="footer-contacts-address-text">
+              Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            </p>
+          </address>
+        </section>
+        <nav class="footer-shop-info-nav">
+          <h4 class="visually-hidden">информация и контакты</h4>
+          <ul class="footer-shop-info">
+            <li class="footer-shop-info-item">
+              <a class="footer-shop-info-link" href="#">Доставка</a>
+            </li>
+            <li class="footer-shop-info-item">
+              <a class="footer-shop-info-link" href="#">Гарантия</a>
+            </li>
+            <li class="footer-shop-info-item">
+              <a class="footer-shop-info-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="footer-contacts-phone">
+          <h4 class="visually-hidden">Телефон магазина</h4>
+          <a class="footer-contact-phone-link" href="tel:+78121212">Тел.: +7 (812) 812-12-12</a>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <section class="footer-social">
+          <h4 class="visually-hidden">мы в социальных сетях</h4>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="footer-social-link footer-social-telegram" href="https://t.me/htmlacademy"></a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru"></a>
+            </li>
+          </ul>
+        </section>
+        <div class="footer-logo-wrapper">
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <img class="htmlacademy-link-image" src="images/html-ac-logo-footer.png" width="115" height="33"
+              alt="Ссылка на html-academy.">
           </a>
-        </div>
-        <div class="footer-middle">
-          <section class="footer-contacts-address">
-            <h4 class="visually-hidden">Адрес магазина</h4>
-            <address>
-              <p class="footer-contacts-address-text">
-                Санкт-Петербург, набережная реки Карповки, 5, литера П.
-              </p>
-            </address>
-          </section>
-          <nav class="footer-shop-info-nav">
-            <h4 class="visually-hidden">информация и контакты</h4>
-            <ul class="footer-shop-info">
-              <li class="footer-shop-info-item">
-                <a class="footer-shop-info-link" href="#">Доставка</a>
-              </li>
-              <li class="footer-shop-info-item">
-                <a class="footer-shop-info-link" href="#">Гарантия</a>
-              </li>
-              <li class="footer-shop-info-item">
-                <a class="footer-shop-info-link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <section class="footer-contacts-phone">
-            <h4 class="visually-hidden">Телефон магазина</h4>
-            <a class="footer-contact-phone-link" href="tel:+78121212">Тел.: +7 (812) 812-12-12</a>
-          </section>
-        </div>
-        <div class="footer-bottom">
-          <section class="footer-social">
-            <h4 class="visually-hidden">мы в социальных сетях</h4>
-            <ul class="footer-social-list">
-              <li class="footer-social-item">
-                <a class="footer-social-link footer-social-telegram" href="https://t.me/htmlacademy"></a>
-              </li>
-              <li class="footer-social-item">
-                <a class="footer-social-link footer-social-youtube"
-                  href="https://www.youtube.com/user/htmlacademyru"></a>
-              </li>
-              <li class="footer-social-item">
-                <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru"></a>
-              </li>
-            </ul>
-          </section>
-          <div class="footer-logo-wrapper">
-            <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-              <img class="htmlacademy-link-image" src="images/html-ac-logo-footer.png" width="115" height="33"
-                alt="Ссылка на html-academy.">
-            </a>
-          </div>
         </div>
       </div>
     </footer>
