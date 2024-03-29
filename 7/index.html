@@ -68,8 +68,7 @@
                       <span class="cart-sum">Сумма: 2000 ₽</span>
                     </div>
                     <div class="cart-preview-button-wrapper">
-                      <button class="cart-btn" type="button"><span>Открыть корзину</span>
-                      </button>
+                      <button class="cart-button" type="button">Открыть корзину</button>
                     </div>
                   </div>
                 </div>
@@ -79,9 +78,9 @@
         </div>
         <div class="header-shop-info">
           <div class="header-catalog">
-            <button class="catalog-drop-btn" type="button">
+            <button class="catalog-drop-button" type="button">
               Каталог товаров
-              <span class="catalog-btn"></span>
+              <span class="catalog-button"></span>
             </button>
             <nav class="header-catalog-nav">
               <h4 class="visually-hidden">категории каталога</h4>
@@ -158,20 +157,16 @@
                   Подробнее
                 </button>
               </div>
-              <div class="slider-item-specifications">
-                <div class="specification-wrapper">
-                  <dl class="specification-item">
-                    <dt class="specification-name">Дальность полета</dt>
-                    <dd class="specification-data">800 м</dd>
-                  </dl>
+              <dl class="specification-wrapper">
+                <div class="specification-item">
+                  <dt class="specification-name">Дальность полета</dt>
+                  <dd class="specification-data">800 м</dd>
                 </div>
-                <div class="specification-wrapper">
-                  <dl class="specification-item">
-                    <dt class="specification-name">Радиус поражения</dt>
-                    <dd class="specification-data">50 м</dd>
-                  </dl>
+                <div class="specification-item">
+                  <dt class="specification-name">Радиус поражения</dt>
+                  <dd class="specification-data">50 м</dd>
                 </div>
-              </div>
+              </dl>
             </div>
           </article>
           <article class="slider-item-wrapper slider-item-wrapper-2 visually-hidden">
@@ -195,14 +190,12 @@
                   Подробнее
                 </button>
               </span>
-              <div class="slider-item-specifications">
-                <div class="specification-wrapper">
-                  <dl class="specification-item">
-                    <dt class="specification-name">Без подзарядки</dt>
-                    <dd class="specification-data"> 48 часов</dd>
-                  </dl>
+              <dl class="specification-wrapper">
+                <div class="specification-item">
+                  <dt class="specification-name">Без подзарядки</dt>
+                  <dd class="specification-data"> 48 часов</dd>
                 </div>
-              </div>
+              </dl>
             </div>
           </article>
           <article class="slider-item-wrapper slider-item-wrapper-3 visually-hidden">
@@ -228,26 +221,20 @@
                   Подробнее
                 </button>
               </div>
-              <div class="slider-item-specifications">
-                <div class="specification-wrapper">
-                  <dl class="specification-item">
-                    <dt class="specification-name">Длина палки</dt>
-                    <dd class="specification-data"> 8,5 м</dd>
-                  </dl>
+              <dl class="specification-wrapper">
+                <div class="specification-item">
+                  <dt class="specification-name">Длина палки</dt>
+                  <dd class="specification-data"> 8,5 м</dd>
                 </div>
-                <div class="specification-wrapper">
-                  <dl class="specification-item">
-                    <dt class="specification-name">Вес палки</dt>
-                    <dd class="specification-data"> 5 кг</dd>
-                  </dl>
+                <div class="specification-item">
+                  <dt class="specification-name">Вес палки</dt>
+                  <dd class="specification-data"> 5 кг</dd>
                 </div>
-                <div class="specification-wrapper">
-                  <dl class="specification-item">
-                    <dt class="specification-name">Материал</dt>
-                    <dd class="specification-data"> Карбон</dd>
-                  </dl>
+                <div class="specification-item">
+                  <dt class="specification-name">Материал</dt>
+                  <dd class="specification-data"> Карбон</dd>
                 </div>
-              </div>
+              </dl>
             </div>
           </article>
         </div>
@@ -494,9 +481,7 @@
                 <span>Подписаться</span>
               </button>
             </form>
-            <div class="news-subscription-text-wrapper">
-              <p>Это бесплатно</p>
-            </div>
+            <div class="news-subscription-text-wrapper">Это бесплатно</div>
           </div>
         </div>
       </div>
@@ -561,6 +546,7 @@
       </div>
     </footer>
   </div>
+
   <div class="modal-container modal-container-close">
     <div class="modal modal-delivery">
       <div class="modal-delivery-wrapper">
@@ -603,16 +589,16 @@
                   </div>
                 </div>
               </div>
-              <span class="modal-number-container">
-                <button type="button" class="modal-number-btn">
-                  <img class="modal-number-btn-img" src="images/modal-minus.svg" alt="меньше" width="16" height="16">
+              <div class="modal-number-container">
+                <button type="button" class="modal-number-button">
+                  <img class="modal-number-button-img" src="images/modal-minus.svg" alt="меньше" width="16" height="16">
                 </button>
                 <input class="modal-field modal-number-field" type="number" name="number" id="number" placeholder=""
                   value="1" required>
-                <button type="button" class="modal-number-btn">
-                  <img class="modal-number-btn-img" src="images/modal-plus.svg" alt="больше" width="16" height="16">
+                <button type="button" class="modal-number-button">
+                  <img class="modal-number-button-img" src="images/modal-plus.svg" alt="больше" width="16" height="16">
                 </button>
-              </span>
+              </div>
             </div>
           </div>
           <button type="submit" class="button modal-button">Отправить</button>
