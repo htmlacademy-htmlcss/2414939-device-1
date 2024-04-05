@@ -161,48 +161,56 @@
                 </div>
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label filter-label-min">
-                    <span class="range-text">от</span><input class="range-input" type="number" value="0"
-                      name="min-price"></label>
+                    <span class="range-text">от</span>
+                    <input class="range-input" type="number" value="0" name="min-price">
+                  </label>
                   <label class="catalog-filter-label filter-label-max">
-                    <span class="range-text">до</span><input class="range-input" type="number" value="5000"
-                      name="max-price">
+                    <span class="range-text">до</span>
+                    <input class="range-input" type="number" value="5000" name="max-price">
                   </label>
                 </div>
               </div>
             </fieldset>
             <fieldset class="filter-value-select">
               <legend class="filter-name">Цвет</legend>
-              <div class="form-field-item">
-                <input id="black" class="checkbox-item" type="checkbox" name="color-black" checked>
-                <label class="form-check" for="black">Черный</label>
-              </div>
-              <div class="form-field-item">
-                <input id="white" class="checkbox-item" type="checkbox" name="color-white" checked>
-                <label class="form-check" for="white">Белый</label>
-              </div>
-              <div class="form-field-item">
-                <input id="blue" class="checkbox-item" type="checkbox" name="color-blue">
-                <label class="form-check" for="blue">Синий</label>
-              </div>
-              <div class="form-field-item">
-                <input id="red" class="checkbox-item" type="checkbox" name="color-red">
-                <label class="form-check" for="red">Красный</label>
-              </div>
-              <div class="form-field-item">
-                <input id="pink" class="checkbox-item" type="checkbox" name="color-pink">
-                <label class="form-check" for="pink">Розовый</label>
-              </div>
+              <label class="check option">
+                <input class="check-input" type="checkbox" name="color" checked>
+                <span class="check-box"></span>
+                <span>Черный</span>
+              </label>
+              <label class="check option">
+                <input class="check-input" type="checkbox" name="color" checked>
+                <span class="check-box"></span>
+                <span>Белый</span>
+              </label>
+              <label class="check option">
+                <input class="check-input" type="checkbox" name="color">
+                <span class="check-box"></span>
+                <span>Синий</span>
+              </label>
+              <label class="check option">
+                <input class="check-input" type="checkbox" name="color">
+                <span class="check-box"></span>
+                <span>Красный</span>
+              </label>
+              <label class="check option">
+                <input class="check-input" type="checkbox" name="color">
+                <span class="check-box"></span>
+                <span>Розовый</span>
+              </label>
             </fieldset>
             <fieldset class="filter-value-select">
               <div class="filter-name">Bluetooth</div>
-              <div class="form-field-item">
-                <input id="bluetooth-true" class="radio-item" type="radio" name="bluetooth" value="true" checked>
-                <label class="form-radio" for="bluetooth-true">Есть</label>
-              </div>
-              <div class="form-field-item">
-                <input id="bluetooth-false" class="radio-item" type="radio" name="bluetooth" value="false">
-                <label class="form-radio" for="bluetooth-false">Нет</label>
-              </div>
+              <label class="form-radio option">
+                <input class="radio-input" type="radio" name="bluetooth" checked>
+                <span class="radio-box"></span>
+                <span>Есть</span>
+              </label>
+              <label class="form-radio option">
+                <input class="radio-input" type="radio" name="bluetooth">
+                <span class="radio-box"></span>
+                <span>Нет</span>
+              </label>
             </fieldset>
           </form>
           <button type="submit" class="button catalog-filters-button">Показать</button>
