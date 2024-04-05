@@ -33,7 +33,7 @@
               <div class="compare-wrapper">
                 <a class="compare-link" href="#">Сравнить</a>
               </div>
-              <div class="cart-wrapper">
+              <section class="cart-wrapper">
                 <button class="cart-link">Корзина</button>
                 <div class="cart-preview-popover">
                   <div class="cart-preview-content">
@@ -72,7 +72,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@
               <button type="button" class="slider-image-button slider-image-prev">
                 <span class="visually-hidden">Предыдущее фото</span>
               </button>
-              <button type="button" class="slider-image-button slider-image-next">
+              <button type="button" class="slider-image-button slider-image-next" disabled>
                 <span class="visually-hidden">Следующее фото</span>
               </button>
             </div>
@@ -546,7 +546,6 @@
       </div>
     </footer>
   </div>
-
   <div class="modal-container modal-container-close">
     <div class="modal modal-delivery">
       <div class="modal-delivery-wrapper">
@@ -558,28 +557,28 @@
       <div class="modal-content">
         <form class="delivery-form" id="delivery" action="/apply/" method="post">
           <div class="contacts-wrapper">
-            <div class="modal-field-title modal-field-name-title">
-              <label for="name" class="modal-title-text">Ваше имя:</label>
+            <fieldset class="modal-field-title modal-field-name-title">
+              <legend class="modal-title-text">Ваше имя:</legend>
               <input class="modal-field modal-name-field" type="text" name="name" id="name" placeholder="Введите имя"
                 required autofocus>
               <span class="modal-name-text">Добавьте имя</span>
-            </div>
-            <div class="modal-field-title modal-field-email-title">
-              <label for="email" class="modal-title-text">Ваш e-mail :</label>
+            </fieldset>
+            <fildset class="modal-field-title modal-field-email-title">
+              <legend class="modal-title-text">Ваш e-mail :</legend>
               <input class="modal-field modal-email-field" type="email" name="email" id="email" placeholder="почта"
                 required>
               <span class="modal-email-text">Забавный у вас адрес</span>
-            </div>
+            </fildset>
           </div>
           <div class="details-wrapper">
-            <div class="modal-field-title modal-field-text-title">
-              <label for="text" class="modal-title-text">Что нужно привезти:</label>
+            <fieldset class="modal-field-title modal-field-text-title">
+              <legend class="modal-title-text">Что нужно привезти:</legend>
               <input class="modal-field modal-text-field" type="text" name="text" id="text"
                 placeholder="В свободной форме" required>
-            </div>
-            <div class="modal-field-title modal-field-number-title">
+            </fieldset>
+            <fieldset class="modal-field-title modal-field-number-title">
               <div class="modal-wrapper">
-                <label for="number" class="modal-title-text">Количество: </label>
+                <legend class="modal-title-text">Количество: </legend>
                 <div class="tooltip">
                   <button class="tooltip-toggle" type="button">
                   </button>
@@ -590,16 +589,14 @@
                 </div>
               </div>
               <div class="modal-number-container">
-                <button type="button" class="modal-number-button">
-                  <img class="modal-number-button-img" src="images/modal-minus.svg" alt="меньше" width="16" height="16">
+                <button type="button" class="modal-number-button modal-number-button-minus">
                 </button>
                 <input class="modal-field modal-number-field" type="number" name="number" id="number" placeholder=""
                   value="1" required>
-                <button type="button" class="modal-number-button">
-                  <img class="modal-number-button-img" src="images/modal-plus.svg" alt="больше" width="16" height="16">
+                <button type="button" class="modal-number-button modal-number-button-plus">
                 </button>
               </div>
-            </div>
+            </fieldset>
           </div>
           <button type="submit" class="button modal-button">Отправить</button>
         </form>
