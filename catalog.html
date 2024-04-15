@@ -11,7 +11,7 @@
 <body>
   <header class="header">
     <div class="header-container">
-      <div class="header-inner">
+      <!-- <div class="header-inner"> -->
         <div class="header-logo-wrapper">
           <a class="header-logo-link" href="index.html">
             <img src="images/main-logo.png" width="145" height="36" alt="Логотип магазина Device.">
@@ -19,13 +19,13 @@
         </div>
         <div class="header-user-navigation">
           <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="search-field">
+            <div class="search-field-wrapper">
               <input class="search-input" type="search" id="header-search" placeholder="Текст поиска" name="search">
             </div>
             <button type="submit" class="search-button">Найти</button>
           </form>
           <div class="header-user-controls">
-            <div class="login">
+            <div class="login-wrapper">
               <a class="profile" href="#">Коля Петухов</a>
               <a class="logout" href="#">Выйти</a>
             </div>
@@ -34,7 +34,8 @@
                 <a class="compare-link" href="#">Сравнить</a>
               </div>
               <div class="cart-wrapper">
-                <button class="cart-link">Корзина</button>
+
+                <button class="cart-link-button"><span class="cart-items-number">2</span>Корзина</button>
                 <div class="cart-preview-popover">
                   <div class="cart-preview-content">
                     <ul class="cart-preview-items-list">
@@ -46,7 +47,7 @@
                             <span class="cart-item-title">Любительская селфи-палка</span>
                           </a>
                         </div>
-                        <button class="cart-item-button" type="button">
+                        <button class="cart-item-delite-button" type="button">
                           <span class="visually-hidden">Удалить из корзины</span>
                         </button>
                       </li>
@@ -58,7 +59,7 @@
                             <span class="cart-item-title">Профессиональная селфи-палка</span>
                           </a>
                         </div>
-                        <button class="cart-item-button" type="button">
+                        <button class="cart-item-delite-button" type="button">
                           <span class="visually-hidden">Удалить из корзины</span>
                         </button>
                       </li>
@@ -81,7 +82,7 @@
           <div class="header-catalog">
             <button class="catalog-drop-button" type="button">
               Каталог товаров
-              <span class="catalog-button"></span>
+              <span class="catalog-drop-button-icon"></span>
             </button>
             <nav class="header-catalog-nav">
               <h4 class="visually-hidden">категории каталога</h4>
@@ -126,7 +127,7 @@
             </ul>
           </nav>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
   </header>
   <main class="main-container">
@@ -159,7 +160,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="range-wrapper-inputs">
+                <div class="range-inputs-wrapper">
                   <label class="catalog-filter-label filter-label-min">
                     <span class="range-text">от</span>
                     <input class="range-input" type="number" value="0" name="min-price">
@@ -173,44 +174,48 @@
             </fieldset>
             <fieldset class="filter-value-select">
               <legend class="filter-name">Цвет</legend>
-              <label class="check option">
-                <input class="check-input" type="checkbox" name="color" checked>
-                <span class="check-box"></span>
-                <span>Черный</span>
-              </label>
-              <label class="check option">
-                <input class="check-input" type="checkbox" name="color" checked>
-                <span class="check-box"></span>
-                <span>Белый</span>
-              </label>
-              <label class="check option">
-                <input class="check-input" type="checkbox" name="color">
-                <span class="check-box"></span>
-                <span>Синий</span>
-              </label>
-              <label class="check option">
-                <input class="check-input" type="checkbox" name="color">
-                <span class="check-box"></span>
-                <span>Красный</span>
-              </label>
-              <label class="check option">
-                <input class="check-input" type="checkbox" name="color">
-                <span class="check-box"></span>
-                <span>Розовый</span>
-              </label>
+              <div class="filter-value-wrapper">
+                <label class="filter-value-item">
+                  <input class="filter-value-input" type="checkbox" name="color" checked>
+                  <span class="filter-value-check-box"></span>
+                  <span>Черный</span>
+                </label>
+                <label class="filter-value-item">
+                  <input class="filter-value-input" type="checkbox" name="color" checked>
+                  <span class="filter-value-check-box"></span>
+                  <span>Белый</span>
+                </label>
+                <label class="filter-value-item">
+                  <input class="filter-value-input" type="checkbox" name="color">
+                  <span class="filter-value-check-box"></span>
+                  <span>Синий</span>
+                </label>
+                <label class="filter-value-item">
+                  <input class="filter-value-input" type="checkbox" name="color">
+                  <span class="filter-value-check-box"></span>
+                  <span>Красный</span>
+                </label>
+                <label class="filter-value-item">
+                  <input class="filter-value-input" type="checkbox" name="color">
+                  <span class="filter-value-check-box"></span>
+                  <span>Розовый</span>
+                </label>
+              </div>
             </fieldset>
             <fieldset class="filter-value-select">
               <div class="filter-name">Bluetooth</div>
-              <label class="form-radio option">
-                <input class="radio-input" type="radio" name="bluetooth" checked>
-                <span class="radio-box"></span>
-                <span>Есть</span>
-              </label>
-              <label class="form-radio option">
-                <input class="radio-input" type="radio" name="bluetooth">
-                <span class="radio-box"></span>
-                <span>Нет</span>
-              </label>
+              <div class="filter-value-wrapper">
+                <label class="filter-value-item">
+                  <input class="filter-value-input" type="radio" name="bluetooth" checked>
+                  <span class="filter-value-radio-box"></span>
+                  <span>Есть</span>
+                </label>
+                <label class="filter-value-item">
+                  <input class="filter-value-input" type="radio" name="bluetooth">
+                  <span class="filter-value-radio-box"></span>
+                  <span>Нет</span>
+                </label>
+              </div>
             </fieldset>
           </form>
           <button type="submit" class="button catalog-filters-button">Показать</button>
@@ -252,7 +257,7 @@
                         <p class="catalog-item-price">500 &#8381;</p>
                       </div>
                     </a>
-                    <a class="catalog-item-info" href="#">Подробнее</a>
+                    <a class="catalog-item-info-link" href="#">Подробнее</a>
                   </article>
                 </li>
                 <li class="catalog-item">
@@ -268,7 +273,7 @@
                         <p class="catalog-item-price">1500 &#8381;</p>
                       </div>
                     </a>
-                    <a class="catalog-item-info" href="#">Подробнее</a>
+                    <a class="catalog-item-info-link" href="#">Подробнее</a>
                   </article>
                 </li>
                 <li class="catalog-item">
@@ -282,7 +287,7 @@
                         <p class="catalog-item-price">2500 &#8381;</p>
                       </div>
                     </a>
-                    <a class="catalog-item-info" href="#">Подробнее</a>
+                    <a class="catalog-item-info-link" href="#">Подробнее</a>
                   </article>
                 </li>
                 <li class="catalog-item">
@@ -296,48 +301,48 @@
                         <p class="catalog-item-price">1500 &#8381;</p>
                       </div>
                     </a>
-                    <a class="catalog-item-info" href="#">Подробнее</a>
+                    <a class="catalog-item-info-link" href="#">Подробнее</a>
                   </article>
                 </li>
               </ul>
             </section>
             <div class="load-more">
-              <button type="button" class="button-load-more">Загрузить ещё</button>
+              <button type="button" class="load-more-button">Загрузить ещё</button>
             </div>
-            <div class="pagination">
-              <a class="pagination-button pagination-button-back" href="#">Назад</a>
-              <ul class="pagination-list">
+            <div class="catalog-pagination">
+              <a class="catalog-pagination-button catalog-pagination-button-back" href="#">Назад</a>
+              <ul class="catalog-pagination-list">
                 <li>
-                  <a class="pagination-list-item pagination-list-item-active" href="#">1</a>
+                  <a class="catalog-pagination-list-item catalog-pagination-list-item-active" href="#">1</a>
                 </li>
                 <li>
-                  <a class="pagination-list-item" href="#">2</a>
+                  <a class="catalog-pagination-list-item" href="#">2</a>
                 </li>
                 <li>
-                  <a class="pagination-list-item" href="#">3</a>
+                  <a class="catalog-pagination-list-item" href="#">3</a>
                 </li>
                 <li>
-                  <a class="pagination-list-item" href="#">...</a>
+                  <a class="catalog-pagination-list-item" href="#">...</a>
                 </li>
                 <li>
-                  <a class="pagination-list-item" href="#">15</a>
+                  <a class="catalog-pagination-list-item" href="#">15</a>
                 </li>
               </ul>
-              <a class="pagination-button pagination-button-forward" href="#">Вперед</a>
+              <a class="catalog-pagination-button catalog-pagination-button-forward" href="#">Вперед</a>
             </div>
           </div>
         </section>
       </div>
     </div>
   </main>
-  <div class="footer-background">
+  <div class="footer-wrapper">
     <footer class="footer-container">
-      <div class="footer-top">
+      <div class="footer-shop-logo-wrapper">
         <a class="footer-shop-logo-link" href="index.html">
           <img src="images/footer-logo.png" width="145" height="36" alt="Логотип магазина Device.">
         </a>
       </div>
-      <div class="footer-middle">
+      <div class="footer-shop-info">
         <section class="footer-contacts-address">
           <h4 class="visually-hidden">Адрес магазина</h4>
           <address>
@@ -348,7 +353,7 @@
         </section>
         <nav class="footer-shop-info-nav">
           <h4 class="visually-hidden">информация и контакты</h4>
-          <ul class="footer-shop-info">
+          <ul class="footer-shop-info-list">
             <li class="footer-shop-info-item">
               <a class="footer-shop-info-link" href="#">Доставка</a>
             </li>
@@ -380,7 +385,7 @@
             </li>
           </ul>
         </section>
-        <div class="footer-logo-wrapper">
+        <div class="htmlacademy-link-wrapper">
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
             <img class="htmlacademy-link-image" src="images/html-ac-logo-footer.png" width="115" height="33"
               alt="Ссылка на html-academy.">
