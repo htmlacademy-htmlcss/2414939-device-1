@@ -59,14 +59,14 @@ body {
   line-height: 30px;
 }
 
-h1 {
+.h1 {
   font-family: Raleway, sans-serif;
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
 }
 
-h2 {
+.h2 {
   font-family: Raleway, sans-serif;
   font-size: 50px;
   font-weight: 800;
@@ -74,7 +74,7 @@ h2 {
   letter-spacing: 0.2em;
 }
 
-h3 {
+.h3 {
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -82,17 +82,17 @@ h3 {
   letter-spacing: -0.02em;
 }
 
-a {
+.link {
   color: #000000;
   text-decoration: none;
 }
 
-ul {
+.list {
   list-style: none;
   padding-left: 0;
 }
 
-button {
+.button {
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -163,8 +163,9 @@ button {
 .header {
   margin: 0 auto;
   width: 1160px;
-  background: linear-gradient(#FFFFFF 0 40px, #FFE17F 40px);
-  padding: 21px 0;
+  background: linear-gradient(#FFFFFF 0 30px, #FFE17F 30px);
+  padding-top: 12px;
+  padding-bottom: 18px;
 }
 
 .header-container {
@@ -173,7 +174,7 @@ button {
 }
 
 .header-logo-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .header-logo-link {
@@ -198,7 +199,7 @@ button {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   gap: 24px;
   position: relative;
   space-between;
@@ -296,6 +297,7 @@ button {
   position: relative;
   gap: 12px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .login-wrapper:hover {
@@ -314,7 +316,7 @@ button {
 
 .login-link::before {
   content: "";
-  background-image: url("../images/login_default.svg");
+  background-image: url("../images/login-default.svg");
   width: 15px;
   height: 12px;
 }
@@ -328,7 +330,7 @@ button {
 
 .profile::before {
   content: "";
-  background-image: url("../images/login_default.svg");
+  background-image: url("../images/login-default.svg");
   width: 15px;
   height: 12px;
 }
@@ -357,7 +359,7 @@ button {
   content: "";
   width: 10px;
   height: 12px;
-  background-image: url("../images/compare_default.svg");
+  background-image: url("../images/compare-default.svg");
 }
 
 .compare-link:hover {
@@ -609,7 +611,6 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   text-align: left;
-  z-index: 3;
 }
 
 .catalog-drop-button:hover .catalog-drop-button-icon {
@@ -619,7 +620,7 @@ button {
 .catalog-drop-button:focus .catalog-drop-button-icon::before {
   width: 16px;
   height: 2px;
-  background-image: url("../images/dropbtn-minus.svg");
+  background-image: url("../images/drop-button-minus.svg");
 }
 
 .catalog-drop-button-icon {
@@ -643,7 +644,7 @@ button {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 2;
-  background-image: url("../images/dropbtn-plus.svg");
+  background-image: url("../images/drop-button-plus.svg");
 }
 
 .header-catalog-nav {
@@ -707,7 +708,7 @@ button {
 }
 
 .page-container {
-  margin-top: -40px;
+  margin-top: -36px;
 }
 
 .slider {
@@ -784,7 +785,7 @@ button {
   color: #000000;
   background-color: #FFFFFF;
   padding: 2px;
-  background-image: url("../images/slider-prev.svg");
+  background-image: url("../images/slider-scroll.svg");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -845,6 +846,8 @@ button {
 
 .slider-item-description p {
   margin-bottom: 52px;
+  max-height: 60px;
+  overflow: auto;
 }
 
 .slider-item-title {
@@ -952,7 +955,6 @@ button {
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   grid-gap: 40px;
 }
-
 
 .catalog-category-link {
   display: block;
@@ -1416,7 +1418,7 @@ button {
 }
 
 .main-container {
-  padding-top: 33px;
+  padding-top: 36px;
 }
 
 .page-title-container {
@@ -1526,7 +1528,7 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 35px;
+  gap: 34px;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -1756,9 +1758,6 @@ button {
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-line-pack: start;
-  align-content: start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: start;
   background-color: #F0F0F0;
   margin-bottom: 15px;
@@ -1766,9 +1765,17 @@ button {
 }
 
 .sort-selection {
-  display: flex;
   background-color: #F0F0F0;
-  justify-content: space-between;
+  position: relative;
+  margin-left: -10px;
+
+}
+.sort-select {
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; */
+  cursor: pointer;
 }
 
 .catalog-page-sort-arrows {
@@ -2118,9 +2125,8 @@ catalog-pagination-list-item-active {
 
 .footer-shop-info {
   display: flex;
-  margin-bottom: 47px;
   align-items: center;
-  margin-bottom: 49px;
+  margin-bottom: 48px;
 }
 
 .footer-contacts-address {
@@ -2136,13 +2142,9 @@ catalog-pagination-list-item-active {
   max-width: 240px;
 }
 
-.footer-shop-info-nav {
-  align-self: center;
-}
-
 .footer-shop-info-list {
   display: flex;
-  gap: 35px;
+  gap: 31px;
 }
 
 .footer-shop-info-item:active a {
@@ -2284,7 +2286,7 @@ catalog-pagination-list-item-active {
   content: "";
   width: 16px;
   height: 11px;
-  background-image: url("../images/telegram_icon.svg");
+  background-image: url("../images/telegram-icon.svg");
   background-repeat: no-repeat;
 }
 
@@ -2292,7 +2294,7 @@ catalog-pagination-list-item-active {
   content: "";
   width: 16px;
   height: 11px;
-  background-image: url("../images/youtube_icon.svg");
+  background-image: url("../images/youtube-icon.svg");
   background-repeat: no-repeat;
 }
 
@@ -2300,7 +2302,7 @@ catalog-pagination-list-item-active {
   content: "";
   width: 15px;
   height: 14px;
-  background-image: url("../images/twitter_icon.svg");
+  background-image: url("../images/twitter-icon.svg");
   background-repeat: no-repeat;
 }
 
@@ -2317,7 +2319,7 @@ catalog-pagination-list-item-active {
 }
 
 .copyright-link:hover {
-  background-image: url("../images/footer-logo_hover.png");
+  background-image: url("../images/footer-copyright-logo-hover.png");
   background-repeat: no-repeat;
 }
 
@@ -2385,7 +2387,7 @@ catalog-pagination-list-item-active {
   width: 26px;
   height: 26px;
   background-color: #FFFFFF;
-  background-image: url("../images/icon-cross.svg");
+  background-image: url("../images/modal-close-button-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
