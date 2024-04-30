@@ -1817,22 +1817,22 @@ body {
   grid-template-rows: 1fr 1fr;
 }
 
-.catalog-items-list> *  :nth-child(1) {
+.catalog-items-list > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
 
-.catalog-items-list> * :nth-child(2) {
+.catalog-items-list > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
 
-.catalog-items-list> * :nth-child(3) {
+.catalog-items-list > *:nth-child(3) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
 
-.catalog-items-list> * :nth-child(4) {
+.catalog-items-list > *:nth-child(4) {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
 }
